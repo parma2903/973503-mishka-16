@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Юлия Юркина](https://up.htmlacademy.ru/adaptive/16/user/973503).
-* Наставник: [Евгений Алипкин] (https://htmlacademy.ru/profile/ealipkin).
+* Наставник: [Евгений Алипкин](https://htmlacademy.ru/profile/ealipkin).
 
 ---
 
