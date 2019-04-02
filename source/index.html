@@ -5,8 +5,119 @@
     <title>HTML Academy: Мишка</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="86" height="35" alt="Мишка">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="site-list__item">
+              <a href="order.html">Вязание на заказ</a>
+            </li>
+            <li class="site-list__item">
+              <a href="search.html">Поиск по сайту</a>
+            </li>
+            <li class="site-list__item">
+              <a href="cart.html">Корзина</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+      <section class="charter">
+        <h1 class="charter__title">Милые штуки<br>ручной<br> работы для дома</h1>
+        <img class="charter__img" src="img/hero-mobile.png" width="322" height="373">
+        <a class="button charter__item" href="interier.html">
+          <p class="charter__title charter__interier">Предметы интерьера</p>
+        </a>
+        <a class="button charter__item" href="toys.html">
+          <p class="charter__title charter__title--dark charter__toys">Детские игрушки</p>
+        </a>
+      </section>
+      <section class="hit-sale">
+        <h2 class="hit-sale__title">Вязанные корзинки</h2>
+        <p class="hit-sale__subtitle">Товар недели</p>
+        <p class="hit-sale__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+        <table class="hit-sale__description">
+          <tr>
+            <td class="hit-sale__parameter">Цвет:</td>
+            <td class="hit-sale__value">«Тиффани»/серый</td>
+          </tr>
+          <tr>
+            <td class="hit-sale__parameter">Диаметр:</td>
+            <td class="hit-sale__value">25 см</td>
+          </tr>
+          <tr>
+            <td class="hit-sale__parameter">Высота:</td>
+            <td class="hit-sale__value">15 см</td>
+          </tr>
+          <img class="hit-sale__img src=img/triple-set-mobile.png width="260" height="315">
+          <p class="hit-sale__price">Цена: 990 руб.</p>
+          <button class="button__order" type="button">ЗАКАЗАТЬ</button>
+          <img class="page-main--devide-line src=img/zigzag-line-desktop.svg width="100%" height="315">
+      </section>
+      <section class="info">
+        <h2 class="info__title">Коротко о нас:</h2>
+        <p class="info-text info-flower">Экологически<br>чистые материалы</p>
+        <p class="info-text info-money">Скандинавский стиль<br>по российской цене</p>
+        <p class="info-text info-heart">Увеличивает лайки<br>на фотографиях</p>
+        <p class="info-text info-clew">Связано вручную с<br>любовью и умилением</p>
+        <p class="info-text info-rocket">Поддержка отечественного<br>производителя</p>
+        <p class="info-text info-present">Поставляется в<br>подарочной упаковке</p>
+      </section>
+      <section class="reviews">
+        <h2 class="review__title">Отзывы</h2>
+        <blockquote class="review__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</blockquote>
+        <cite class="review__author-name">Трэвис Баркер</cite>
+        <cite class="review__author-nick">Трэвис Баркер</cite>
+        <button class="review__before" type="button">Предыдущий отзыв</button>
+        <button class="reviews__next" type="button">Следующий отзыв</button>
+        <a class="review__write button" href="#">Написать</a>
+        <img class="page-main--devide-line" src="img/zigzag-line-desktop.svg" width="100%" height="315">
+      <section>
+      <section class="contacts">
+        <h2 class="contacts__title">Контакты</h2>
+        <table class="contacts-list">
+          <tr>
+            <td class="contacts-parameter">e-mail:</td>
+            <td class="contacts-value">info@mimimishkashop.ru</td>
+          </tr>
+          <tr>
+            <td class="contacts-parameter">адрес:</td>
+            <td class="contacts-value">г. Санкт-Петербург,<br>ул. Большая Конюшенная,<br>д. 19/8, офис 101</td>
+            <img class="contacts-map" src="img/map.jpg" width="320" height="457" alt="Карта">
+            <img class="contacts-map--pin" src="img/map-pin.jpg" width="67" height="100" alt="Метка на карте">
+            <a class="contacts-write button" href="#">апишите нам</a>
+          </tr>
+        </table>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__social social">
+          <ul class="social-list">
+            <li class="social-item">
+              <a class="social-link social-link--instagram" href="https://vk.com/htmlacademy">Мы в Инстаграм</a>
+            </li>
+            <li class="social-item">
+              <a class="social-link social-link--facebook" href="https://facebook.com/htmlacademy">Мы в Фейсбук</a>
+            </li>
+            <li class="social-item">
+              <a class="social-link social-link--twitter" href="https://twitter.com/htmlacademy">Мы в Твиттере</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <p class="copyright__text">Разработано</p>
+          <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

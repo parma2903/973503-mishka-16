@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="86" height="35" alt="Мишка">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+                <a href="#">Каталог товаров</a>
+            </li>
+            <li class="site-list__item">
+                <a href="order.html">Вязание на заказ</a>
+            </li>
+            <li class="site-list__item">
+                <a href="search.html">Поиск по сайту</a>
+            </li>
+            <li class="site-list__item">
+                <a href="cart.html">Корзина</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+      <section class="cherter charter-inner">
+        <h1 class="charter__title">Каталог товаров</h1>
+        <section class="goods">
+          <div class="goods_wrapper">
+            <ul class="goods-list">
+              <li class="good-item">
+                <a class="good__link" href="">
+                  <img class="good__img" src="img/photo-1-mobile.png" width="260" height="195" alt="Зайчик-попрыгайчик">
+                </a>
+                <p class="good__title">Зайчик-попрыгайчик</p>
+                <p class="good__text">Рост 30 см, вес 200 г</p>
+                <p class="good__price good__price-cart">1 200 руб.</p>
+              </li>
+              <li class="good-item">
+                <a class="good__link" href="">
+                  <img class="good__img" src="img/photo-2-mobile.png" width="260" height="195" alt="Корзинка для белья">
+                </a>
+                <p class="good__title">Корзинка для белья</p>
+                <p class="good__text">Диаметр 15 см, высота 10 см</p>
+                <p class="good__price good__price-cart">690 руб.</p>
+              </li>
+              <li class="good-item">
+                <a class="good__link" href="">
+                  <img class="good__img" src="img/photo-3-mobile.png" width="260" height="195" alt="Большая корзинка для игрушек">
+                </a>
+                <p class="good__title">Большая корзинка<br>для игрушек</p>
+                <p class="good__text">Диаметр 30 см, высота 30 см</p>
+                <p class="good__price good__price-cart">1 500 руб.</p>
+              </li>
+            </ul>
+          </div>
+      </section>
+      <section class="producing">
+        <h2 class="producing__title producing_title-camera"> Процесс<br>производства</h>
+        <div clacc="producing__video">
+          <video width="260" height="150" controls="controls" poster="img/video-mobile.jpg">
+          <source src="#.ogv" type='video/ogg; codecs="theora, vorbis"'>
+          <source src="#.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+          <source src="#.webm" type='video/webm; codecs="vp8, vorbis"'>
+        </div>
+        <p class="producing__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <a class="button producing__oreder" href="#">СДелать заказ</a>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__social social">
+          <ul class="social-list">
+            <li class="social-item">
+              <a class="social-link social-link--instagram" href="https://vk.com/htmlacademy">Мы в Инстаграм</a>
+            </li>
+            <li class="social-item">
+              <a class="social-link social-link--facebook" href="https://facebook.com/htmlacademy">Мы в Фейсбук</a>
+            </li>
+            <li class="social-item">
+              <a class="social-link social-link--twitter" href="https://twitter.com/htmlacademy">Мы в Твиттере</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <p class="copyright__text">Разработано</p>
+          <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
