@@ -6,51 +6,82 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
+      <a class="page-header__logo" href="index.html">
         <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="86" height="35" alt="Мишка">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-                <a href="#">Каталог товаров</a>
-            </li>
-            <li class="site-list__item">
-                <a href="order.html">Вязание на заказ</a>
-            </li>
-            <li class="site-list__item">
-                <a href="search.html">Поиск по сайту</a>
-            </li>
-            <li class="site-list__item">
-                <a href="cart.html">Корзина</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+              <a href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="site-list__item">
+              <a href="#">Вязание на заказ</a>
+          </li>
+          <li class="site-list__item">
+              <a href="search.html">Поиск по сайту</a>
+          </li>
+          <li class="site-list__item">
+              <a href="cart.html">Корзина</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main class="page-main">
-    </main>
+      <p class="page-main__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      <form class="order-form" method="POST" action="">
+        <h2 class="order-form__title">Тип</h2>
+        <input type="radio" name="type" id="accessories" value="accessories">
+        <label class="order-form__text" for="accessories">Аксессуар для интерьера</label>
+        <input type="radio" name="type" id="toys" value="toys">
+        <label class="order-form__text" for="toys">Детская игрушка</label>
+        <h2 class="order-form__title">Цвет</h2>
+        <input type="checkbox" name="white" id="white" value="white">
+        <label class="order-form__text" for="white" >Белый</label>
+        <input type="checkbox" name="gray" id="gray" value="gray">
+        <label class="order-form__text" for="gray" checked>Серый</label>
+        <input type="checkbox" name="tiffani" id="tiffani" value="tiffani">
+        <label class="order-form__text" for="tiffani" checked>«Тиффани»</label>
+        <input type="checkbox" name="black" id="black" value="black">
+        <label class="order-form__text" for="black" checked>Черный</label>
+        <input type="checkbox" name="pink" id="pink" value="pink">
+        <label class="order-form__text" for="pink" checked>Розовый</label>
+        <input type="checkbox" name="orange" id="orange" value="orange">
+        <label class="order-form__text" for="orange" checked>Оранжевый</label>
+        <h2 class="order-form__title">ФИО</h2>
+        <label class="order-form__text" for="name">Имя:</label>
+        <input class="order-form__input" type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
+        <label class="order-form__text" for="surname">Фамилия:</label>
+        <input class="order-form__input" type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
+        <label class="order-form__text" for="second-name">Отчество:</label>
+        <input class="order-form__input" type="text" name="second-name" id="second-name" placeholder="Отчество, если желаете">
+        <h2 class="order-form__title">тел</h2>
+        <input type="tel" name="tel" id="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{7}" placeholder="+7 XXX-XXX XX XX" required>
+        <h2 class="order-form__title">E-mail</h2>
+        <input type="email" name="email" id="email" placeholder="Ваш Email*" required>
+        <h2 class="order-form__title">Доп</h2>
+        <textarea name="additional" id="additional" placeholder="Опишите все ваши пожелания к заказу" rows="5" required></textarea>
+        <p class="order-form__text--required">*Поля обязательны для заполнения</p>
+        <button class="order-form__button">ОТПРАВИТЬ ЗАКАЗ</button>
+      </main>
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <div class="page-footer__social social">
-          <ul class="social-list">
-            <li class="social-item">
-              <a class="social-link social-link--instagram" href="https://vk.com/htmlacademy">Мы в Инстаграм</a>
+        <div class="page-footer__wrapper">
+          <ul class="social page-footer__social">
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="https://vk.com/htmlacademy">Мы в Инстаграм</a>
             </li>
-            <li class="social-item">
-              <a class="social-link social-link--facebook" href="https://facebook.com/htmlacademy">Мы в Фейсбук</a>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://facebook.com/htmlacademy">Мы в Фейсбук</a>
             </li>
-            <li class="social-item">
-              <a class="social-link social-link--twitter" href="https://twitter.com/htmlacademy">Мы в Твиттере</a>
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">Мы в Твиттере</a>
             </li>
           </ul>
+          <div class="page-footer__copyright copyright">
+            <p class="copyright__text">Разработано</p>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </div>
         </div>
-        <div class="page-footer__copyright copyright">
-          <p class="copyright__text">Разработано</p>
-          <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        </div>
-      </div>
-    </footer>
+      </footer>
   </body>
 </html>
