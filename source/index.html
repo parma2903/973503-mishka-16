@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -10,7 +12,9 @@
         <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="86" height="35" alt="Мишка">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <button class="main-nav__toggle" type="button">Открыть меню
+          <img class="main-nav__image" scr="img/menu.svg" width="20" height="14" alt="Кнопка меню">
+        </button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a href="catalog.html">Каталог товаров</a>
@@ -53,7 +57,7 @@
         </table>
         <img class="hit-sale__img" src=img/triple-set-mobile.png width="260" height="315">
         <p class="hit-sale__price">Цена: 990 руб.</p>
-        <button class="button" type="button">ЗАКАЗАТЬ</button>
+        <button class="button hit-sale__button" type="button">ЗАКАЗАТЬ</button>
       </section>
       <hr>
       <section class="info">
@@ -75,8 +79,8 @@
             <cite class="reviews__name">Анастасия Красильникова</cite>
             <cite class="reviews__nick">@misssssiskras</cite>
           </div>
-          <button class="slider__button slider__button--previous" type="button">Предыдущий отзыв</button>
-          <button class="slider__button slider__button--next" type="button">Следующий отзыв</button>
+          <button class="button slider__button slider__button--previous" type="button">Предыдущий отзыв</button>
+          <button class="button slider__button slider__button--next" type="button">Следующий отзыв</button>
           <a class="review__button button" href="#">Написать</a>
         </div>
       </section>
