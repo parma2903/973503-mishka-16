@@ -1,91 +1,105 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
-  </head>
-  <body>
-    <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="86" height="35" alt="Мишка">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-              <a href="#">Каталог товаров</a>
-          </li>
-          <li class="site-list__item">
-              <a href="order.html">Вязание на заказ</a>
-          </li>
-          <li class="site-list__item">
-              <a href="search.html">Поиск по сайту</a>
-          </li>
-          <li class="site-list__item">
-              <a href="cart.html">Корзина</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main class="page-main">
-      <section class="promo">
-        <h1 class="promo__title">Каталог товаров</h1>
-      </section>
-      <section class="goods">
-        <ul class="goods__list">
-          <li class="goods__item">
-            <a class="goods__link" href="">
-              <img class="goods__img" src="img/photo-1-mobile.png" width="260" height="195" alt="Зайчик-попрыгайчик">
-            </a>
-            <p class="goods__title">Зайчик-попрыгайчик</p>
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Мишка</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="page-header">
+    <a class="page-header__logo" href="index.html">
+      <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="86" height="35" alt="Мишка">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a href="#">Каталог товаров</a>
+        </li>
+        <li class="site-list__item">
+          <a href="order.html">Вязание на заказ</a>
+        </li>
+        <li class="site-list__item">
+          <a href="search.html">Поиск по сайту</a>
+        </li>
+        <li class="site-list__item">
+          <a href="cart.html">Корзина</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="page-main">
+    <section class="promo">
+      <h1 class="promo__title">Каталог товаров</h1>
+    </section>
+    <section class="goods">
+      <ul class="goods__list">
+        <li class="goods__item">
+          <a class="goods__link" href="">
+            <img class="goods__img" src="img/photo-1-mobile.png" width="260" height="195" alt="Зайчик-попрыгайчик">
+          </a>
+          <div class="goods__info">
+            <a class="goods__title" href="">Зайчик-попрыгайчик</a>
             <p class="goods__text">Рост 30 см, вес 200 г</p>
-            <a class="goods__price" href="">1 200 руб.</a>
-          </li>
-          <li class="goods__item">
-            <a class="good__link" href="">
-              <img class="good__img" src="img/photo-2-mobile.png" width="260" height="195" alt="Корзинка для белья">
-            </a>
-            <p class="good__title">Корзинка для белья</p>
-            <p class="good__text">Диаметр 15 см, высота 10 см</p>
-            <a class="good__price" href="">690 руб.</a>
-          </li>
-          <li class="goods__item">
-            <a class="goods__link" href="">
-              <img class="goods__img" src="img/photo-3-mobile.png" width="260" height="195" alt="Большая корзинка для игрушек">
-            </a>
-            <p class="goods__title">Большая корзинка<br>для игрушек</p>
-            <p class="goods__text">Диаметр 30 см, высота 30 см</p>
-            <a class="goods__price" href="">1 500 руб.</a>
-          </li>
-        </ul>
-      </section>
-      <section class="producing">
-        <h2 class="producing__title"> Процесс производства</h2>
-        <div clacc="producing__video">
-          <img class="producing__image" width="260" height="150" src="img/video-mobile.jpg" alt="Видео процесса производства">
-        </div>
-        <p class="producing__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-        <a class="button producing__button" href="#">Сделать заказ</a>
-      </section>
-    </main>
-    <footer class="page-footer">
-        <div class="page-footer__wrapper">
-          <ul class="social page-footer__social">
-            <li class="social__item">
-              <a class="social__link social__link--instagram" href="https://vk.com/htmlacademy">Мы в Инстаграм</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://facebook.com/htmlacademy">Мы в Фейсбук</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">Мы в Твиттере</a>
-            </li>
-          </ul>
-          <div class="page-footer__copyright copyright">
-            <p class="copyright__text">Разработано</p>
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            <p class="goods__price">1 200 руб.</p>
           </div>
-        </div>
-      </footer>
-  </body>
+        </li>
+        <li class="goods__item">
+          <a class="goods__link" href="">
+            <img class="good__img" src="img/photo-2-mobile.png" width="260" height="195" alt="Корзинка для белья">
+          </a>
+          <div class="goods__info">
+            <a class="goods__title" href="">Корзинка для белья</a>
+            <p class="goods__text">Диаметр 15 см, высота 10 см</p>
+            <p class="goods__price">690 руб.</p>
+          </div>
+        </li>
+        <li class="goods__item">
+          <a class="goods__link" href="">
+            <img class="goods__img" src="img/photo-3-mobile.png" width="260" height="195"
+              alt="Большая корзинка для игрушек">
+          </a>
+          <div class="goods__info">
+            <a class="goods__title" href="">Большая корзинка<br>для игрушек</a>
+            <p class="goods__text">Диаметр 30 см, высота 30 см</p>
+            <p class="goods__price">1 500 руб.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="producing">
+      <h2 class="producing__title"> Процесс производства</h2>
+      <div clacc="producing__video">
+        <img class="producing__image" width="260" height="150" src="img/video-mobile.jpg"
+          alt="Видео процесса производства">
+      </div>
+      <p class="producing__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как
+        появляются наши товары.</p>
+      <a class="button producing__button" href="#">Сделать заказ</a>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <ul class="social page-footer__social">
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="https://vk.com/htmlacademy">Мы в Инстаграм</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="https://facebook.com/htmlacademy">Мы в Фейсбук</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">Мы в Твиттере</a>
+        </li>
+      </ul>
+      <div class="page-footer__copyright copyright">
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>

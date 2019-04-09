@@ -1,0 +1,30 @@
+.order-form__title {
+  margin: 0;
+  padding: 0;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 16px;
+  color: $color-blue;
+}
+
+.order-form__text {
+  margin: 0;
+  padding: 0;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 18px;
+  color: $color-black;
+}
+
+.order-form__input {
+  font-size: 17px;
+  line-height: 18px;
+  color: $color-light-gray;
+}
+
+.order-form__text--necessary {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: normal;
+  color: $color-brown;
+}

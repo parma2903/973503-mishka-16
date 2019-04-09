@@ -1,0 +1,32 @@
+.promo__title {
+  margin: 0;
+  padding: 0;
+  font-size: 27px;
+  font-weight: bold;
+  line-height: 30px;
+  text-align: center;
+  vertical-align: middle;
+  color: $color-black;
+  background-color: $color-gray;
+}
+
+.promo--toys {
+  background: url("img/hero-mobile.png") no-repeat center;
+}
+
+.promo__button {
+  margin: 0;
+  padding: 0;
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 24px;
+  color: $color-white;
+}
+
+.promo__button--style-1 {
+  background-color: $color-blue;
+}
+
+.promo__button--style-2 {
+  background-color: $color-dark-blue;
+}
