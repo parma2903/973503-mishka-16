@@ -7,7 +7,7 @@
   text-align: center;
   vertical-align: middle;
   color: $color-black;
-  background-color: #ececec;
+  background-color: $color-gray;
 }
 
 .promo--toys {
@@ -20,13 +20,13 @@
   font-size: 19px;
   font-weight: bold;
   line-height: 24px;
-  color: #ffffff;
+  color: $color-white;
 }
 
 .promo__button--style-1 {
-  background-color: #63d1bb;
+  background-color: $color-blue;
 }
 
 .promo__button--style-2 {
-  background-color: #56c3b2;
+  background-color: $color-dark-blue;
 }

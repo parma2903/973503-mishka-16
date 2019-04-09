@@ -4,7 +4,7 @@
   font-size: 17px;
   font-weight: bold;
   line-height: 16px;
-  color: #63d1bb;
+  color: $color-blue;
 }
 
 .order-form__text {
@@ -19,7 +19,7 @@
 .order-form__input {
   font-size: 17px;
   line-height: 18px;
-  color: rgba(68, 68, 68, 0.3);
+  color: $color-light-gray;
 }
 
 .order-form__text--necessary {
