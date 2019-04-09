@@ -5,11 +5,12 @@
 }
 
 .site-list a {
-  color: #000000;
+  color: $color-black;
 }
 
 .site-list__item {
-  color: #000000;
-  border-bottom: 1px solid #ececec;
   margin: 0;
+  padding: 0;
+  color: $color-black;
+  border-bottom: 1px solid #ececec;
 }

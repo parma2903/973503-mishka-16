@@ -1,13 +1,12 @@
 .promo__title {
   margin: 0;
   padding: 0;
-  height: 177px;
   font-size: 27px;
   font-weight: bold;
   line-height: 30px;
   text-align: center;
   vertical-align: middle;
-  color: #010000;
+  color: $color-black;
   background-color: #ececec;
 }
 
@@ -21,7 +20,6 @@
   font-size: 19px;
   font-weight: bold;
   line-height: 24px;
-  text-align: left;
   color: #ffffff;
 }
 

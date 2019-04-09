@@ -8,8 +8,7 @@
   font-size: 17px;
   font-weight: bold;
   line-height: 24px;
-  text-align: left;
-  color: #000000;
+  color: $color-black;
 }
 
 .producing__text {
@@ -17,6 +16,5 @@
   padding: 0;
   font-size: 13px;
   line-height: 24px;
-  text-align: left;
-  color: #444444;
+  color: $color-brown;
 }
