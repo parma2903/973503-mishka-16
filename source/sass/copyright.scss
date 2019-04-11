@@ -1,6 +1,18 @@
+.copyright {
+  display: flex;
+  margin-left: 69px;
+  margin-bottom: 31px;
+}
+
 .copyright__text {
   font-size: 19px;
   font-weight: bold;
   line-height: 18px;
   color: $color-black;
+}
+
+@media (min-width: $desktop-width) {
+  .copyright {
+    margin-left: 84px;
+  }
 }

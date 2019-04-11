@@ -1,7 +1,7 @@
 .site-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  width: 320px;
+
+  @include reset-list;
 }
 
 .site-list a {
@@ -10,7 +10,27 @@
 
 .site-list__item {
   margin: 0;
-  padding: 0;
+  padding: 32px 70px;
   color: $color-black;
   border-bottom: 1px solid $color-gray;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    width: 770px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .site-list__item {
+    margin: 0;
+    padding: 32px 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    width: 1150px;
+  }
 }

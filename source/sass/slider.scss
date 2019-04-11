@@ -1,7 +1,25 @@
-.slider__button {
+.slider__buttons {
   margin: 0;
+  margin-bottom: 38px;
   padding: 0;
+  display: flex;
+}
+
+.slider__button {
   width: 50%;
   border: solid 1px $color-gray;
   background-color: $color-white;
+}
+
+@media (min-width: $tablet-width) {
+  .slider__slide {
+    position: relative;
+  }
+
+  .slider__buttons {
+    width: 137px;
+    position: absolute;
+    right: 71px;
+    bottom: 0;
+  }
 }

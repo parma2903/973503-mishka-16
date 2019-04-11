@@ -1,12 +1,14 @@
 .social {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  @include reset-list;
+  display: flex;
+  margin-left: 87px;
+  margin-bottom: 58px;
+  padding-top: 30px;
 }
 
 .social__link {
   margin: 0;
   padding: 0;
   text-decoration: none;
-  color: $color-white;
+  color: red;
 }

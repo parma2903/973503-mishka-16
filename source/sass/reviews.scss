@@ -1,5 +1,11 @@
+.reviews {
+  margin-left: 29px;
+  margin-bottom: 45px;
+}
+
 .reviews__title {
   margin: 0;
+  margin-bottom: 38px;
   padding: 0;
   font-size: 25px;
   font-weight: bold;
@@ -9,6 +15,7 @@
 
 .reviews__text {
   margin: 0;
+  margin-bottom: 40px;
   padding: 0;
   font-size: 15px;
   line-height: 30px;
@@ -27,8 +34,57 @@
 
 .reviews__nick {
   margin: 0;
+  margin-bottom: 36px;
   padding: 0;
   font: inherit;
   line-height: 30px;
   color: $color-brown;
+  display: block;
+}
+
+.review__button {
+  padding: 20px 81px;
+  font-size: 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews {
+    margin-left: 47px;
+    margin-right: 52px;
+    margin-bottom: 122px;
+    position: relative;
+  }
+
+  .reviews__title {
+    font-size: 43px;
+  }
+
+  .reviews__text {
+    font-size: 17px;
+    margin-bottom: 68px;
+  }
+
+  .review__button {
+    font-size: 17px;
+    position: absolute;
+    right: 52px;
+    top: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    margin-left: 224px;
+    margin-right: 50px;
+    margin-bottom: 169px;
+  }
+
+  .reviews__title {
+    font-size: 53px;
+  }
+
+  .reviews__text {
+    margin-bottom: 49px;
+    margin-right: 157px;
+  }
 }

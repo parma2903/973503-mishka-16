@@ -3,9 +3,11 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Мишка</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -40,28 +42,29 @@
     <form class="order-form" method="POST" action="">
       <h2 class="order-form__title">Тип</h2>
       <input type="radio" name="type" id="accessories" value="accessories">
-      <label class="order-form__text" for="accessories">Аксессуар для интерьера</label>
+      <label class="order-form__text" for="accessories">Аксессуар для интерьера</label><br>
       <input type="radio" name="type" id="toys" value="toys">
       <label class="order-form__text" for="toys">Детская игрушка</label>
       <h2 class="order-form__title">Цвет</h2>
       <input type="checkbox" name="white" id="white" value="white">
-      <label class="order-form__text" for="white">Белый</label>
+      <label class="order-form__text" for="white">Белый</label><br>
       <input type="checkbox" name="gray" id="gray" value="gray">
-      <label class="order-form__text" for="gray" checked>Серый</label>
+      <label class="order-form__text" for="gray" checked>Серый</label><br>
       <input type="checkbox" name="tiffani" id="tiffani" value="tiffani">
-      <label class="order-form__text" for="tiffani" checked>«Тиффани»</label>
+      <label class="order-form__text" for="tiffani" checked>«Тиффани»</label><br>
       <input type="checkbox" name="black" id="black" value="black">
-      <label class="order-form__text" for="black" checked>Черный</label>
+      <label class="order-form__text" for="black" checked>Черный</label><br>
       <input type="checkbox" name="pink" id="pink" value="pink">
-      <label class="order-form__text" for="pink" checked>Розовый</label>
+      <label class="order-form__text" for="pink" checked>Розовый</label><br>
       <input type="checkbox" name="orange" id="orange" value="orange">
-      <label class="order-form__text" for="orange" checked>Оранжевый</label>
+      <label class="order-form__text" for="orange" checked>Оранжевый</label><br>
       <h2 class="order-form__title">ФИО</h2>
-      <label class="order-form__text" for="name">Имя:</label>
-      <input class="order-form__input" type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
-      <label class="order-form__text" for="surname">Фамилия:</label>
-      <input class="order-form__input" type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
-      <label class="order-form__text" for="second-name">Отчество:</label>
+      <label class="order-form__text" for="name">Имя:</label><br>
+      <input class="order-form__input" type="text" name="name" id="name" placeholder="Введите ваше имя*" required><br>
+      <label class="order-form__text" for="surname">Фамилия:</label><br>
+      <input class="order-form__input" type="text" name="surname" id="surname" placeholder="Укажите фамилию*"
+        required><br>
+      <label class="order-form__text" for="second-name">Отчество:</label><br>
       <input class="order-form__input" type="text" name="second-name" id="second-name"
         placeholder="Отчество, если желаете">
       <h2 class="order-form__title">тел</h2>
@@ -77,6 +80,7 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
+      <img class="page-footer__logo-image" src="img/logo-footer.svg" width="102" height="34" alt="Мишка">
       <ul class="social page-footer__social">
         <li class="social__item">
           <a class="social__link social__link--instagram" href="https://vk.com/htmlacademy">Мы в Инстаграм</a>
