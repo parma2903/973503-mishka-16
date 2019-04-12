@@ -1,6 +1,11 @@
+.order-form {
+  padding-left: 29px;
+}
+
 .order-form__title {
   margin: 0;
-  padding: 0;
+  padding-top: 34px;
+  padding-bottom: 30px;
   font-size: 17px;
   font-weight: bold;
   line-height: 16px;
@@ -25,6 +30,13 @@
 .order-form__text--necessary {
   font-size: 14px;
   line-height: 16px;
+  margin-top: 18px;
+  margin-bottom: 31px;
   font-weight: normal;
   color: $color-brown;
+}
+
+.order-form__button {
+  margin-bottom: 55px;
+  padding: 20px 47px;
 }

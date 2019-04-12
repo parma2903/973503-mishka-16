@@ -1,6 +1,12 @@
+.promo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
 .promo__title {
   margin: 0;
-  padding: 0;
+  padding: 75px 43px;
   font-size: 27px;
   font-weight: bold;
   line-height: 30px;
@@ -14,9 +20,16 @@
   background: url("img/hero-mobile.png") no-repeat center;
 }
 
+.promo__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 34px;
+}
+
 .promo__button {
   margin: 0;
-  padding: 0;
+  padding: 30px;
+  padding-right: auto;
   font-size: 19px;
   font-weight: bold;
   line-height: 24px;
@@ -29,4 +42,57 @@
 
 .promo__button--style-2 {
   background-color: $color-dark-blue;
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    margin-bottom: 79px;
+  }
+
+  .promo--toys {
+    margin-bottom: 55px;
+  }
+
+  .promo__title {
+    text-align: center;
+    padding-bottom: 490px;
+  }
+
+  .promo__wrapper {
+    flex-direction: row;
+    margin: 0 52px;
+    margin-top: -84px;
+  }
+
+  .promo__button {
+    text-align: center;
+  }
+
+  .promo__button--style-1 {
+    padding-right: 187px;
+  }
+
+  .promo__button--style-2 {
+    padding-right: 204px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo__title {
+    padding-bottom: 473px;
+  }
+
+  .promo__wrapper {
+    margin: 0 50px;
+    margin-top: -84px;
+    margin-bottom: 134px;
+  }
+
+  .promo__button--style-1 {
+    padding-right: 377px;
+  }
+
+  .promo__button--style-2 {
+    padding-right: 395px;
+  }
 }
