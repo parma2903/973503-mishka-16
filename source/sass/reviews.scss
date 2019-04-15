@@ -1,5 +1,4 @@
 .reviews {
-  margin-left: 29px;
   margin-bottom: 45px;
 }
 
@@ -43,14 +42,13 @@
 }
 
 .review__button {
-  padding: 20px 81px;
+  padding: 20px 0;
   font-size: 18px;
+  width: 100%;
 }
 
 @media (min-width: $tablet-width) {
   .reviews {
-    margin-left: 47px;
-    margin-right: 52px;
     margin-bottom: 122px;
     position: relative;
   }
@@ -69,18 +67,31 @@
     position: absolute;
     right: 52px;
     top: 0;
+    width: 26%;
   }
 }
 
 @media (min-width: $desktop-width) {
   .reviews {
-    margin-left: 224px;
     margin-right: 50px;
     margin-bottom: 169px;
   }
 
   .reviews__title {
     font-size: 53px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .reviews::before {
+    background: url("../img/review@1x.jpg") no-repeat center;
+    position: absolute;
+    content: "";
+    z-index: 0;
+    top: -52px;
+    left: -170px;
+    width: 350px;
+    height: 457px;
   }
 
   .reviews__text {

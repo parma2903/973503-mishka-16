@@ -1,7 +1,6 @@
 .copyright {
-  display: flex;
-  margin-left: 69px;
-  margin-bottom: 31px;
+  text-align: center;
+  padding-bottom: 31px;
 }
 
 .copyright__text {
@@ -9,6 +8,12 @@
   font-weight: bold;
   line-height: 18px;
   color: $color-black;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    padding-bottom: 0;
+  }
 }
 
 @media (min-width: $desktop-width) {

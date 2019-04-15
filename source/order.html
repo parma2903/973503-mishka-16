@@ -3,9 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!--<meta name="viewport" content="width=device-width,initial-scale=1">-->
   <title>HTML Academy: Мишка</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -40,25 +39,25 @@
     <p class="page-main__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы
       свяжемся с вами, чтобы уточнить детали.</p>
     <form class="order-form" method="POST" action="">
-      <h2 class="order-form__title">Тип</h2>
+      <h2 class="order-form__title order-form__title--type">Тип</h2>
       <input type="radio" name="type" id="accessories" value="accessories">
-      <label class="order-form__text" for="accessories">Аксессуар для интерьера</label><br>
+      <label class="order-form__text order-form__text--accessories" for="accessories">Аксессуар для интерьера</label><br>
       <input type="radio" name="type" id="toys" value="toys">
       <label class="order-form__text" for="toys">Детская игрушка</label>
-      <h2 class="order-form__title">Цвет</h2>
+      <h2 class="order-form__title order-form__title--color">Цвет</h2>
       <input type="checkbox" name="white" id="white" value="white">
-      <label class="order-form__text" for="white">Белый</label><br>
+      <label class="order-form__text order-form__text--color-value" for="white">Белый</label><br>
       <input type="checkbox" name="gray" id="gray" value="gray">
-      <label class="order-form__text" for="gray" checked>Серый</label><br>
+      <label class="order-form__text order-form__text--color-value" for="gray" checked>Серый</label><br>
       <input type="checkbox" name="tiffani" id="tiffani" value="tiffani">
-      <label class="order-form__text" for="tiffani" checked>«Тиффани»</label><br>
+      <label class="order-form__text order-form__text--color-value" for="tiffani" checked>«Тиффани»</label><br>
       <input type="checkbox" name="black" id="black" value="black">
-      <label class="order-form__text" for="black" checked>Черный</label><br>
+      <label class="order-form__text order-form__text--color-value" for="black" checked>Черный</label><br>
       <input type="checkbox" name="pink" id="pink" value="pink">
-      <label class="order-form__text" for="pink" checked>Розовый</label><br>
+      <label class="order-form__text order-form__text--color-value" for="pink" checked>Розовый</label><br>
       <input type="checkbox" name="orange" id="orange" value="orange">
       <label class="order-form__text" for="orange" checked>Оранжевый</label><br>
-      <h2 class="order-form__title">ФИО</h2>
+      <h2 class="order-form__title order-form__title--initials">ФИО</h2>
       <label class="order-form__text" for="name">Имя:</label><br>
       <input class="order-form__input" type="text" name="name" id="name" placeholder="Введите ваше имя*" required><br>
       <label class="order-form__text" for="surname">Фамилия:</label><br>
@@ -67,12 +66,12 @@
       <label class="order-form__text" for="second-name">Отчество:</label><br>
       <input class="order-form__input" type="text" name="second-name" id="second-name"
         placeholder="Отчество, если желаете">
-      <h2 class="order-form__title">тел</h2>
+      <h2 class="order-form__title order-form__title--telephone">тел</h2>
       <input class="order-form__input" type="tel" name="tel" id="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{7}"
         placeholder="+7 XXX-XXX XX XX" required>
-      <h2 class="order-form__title">E-mail</h2>
+      <h2 class="order-form__title order-form__title--email">E-mail</h2>
       <input class="order-form__input" type="email" name="email" id="email" placeholder="Ваш Email*" required>
-      <h2 class="order-form__title">Доп</h2>
+      <h2 class="order-form__title order-form__title--addition">Доп</h2>
       <textarea class="order-form__input" name="additional" id="additional"
         placeholder="Опишите все ваши пожелания к заказу" rows="5" required></textarea>
       <p class="order-form__text order-form__text--necessary">*Поля обязательны для заполнения</p>

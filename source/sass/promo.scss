@@ -1,6 +1,4 @@
 .promo {
-  display: flex;
-  flex-direction: column;
   margin-bottom: 30px;
 }
 
@@ -17,23 +15,21 @@
 }
 
 .promo--toys {
-  background: url("img/hero-mobile.png") no-repeat center;
+  background: url("../img/hero-mobile@1x.jpg") no-repeat center;
 }
 
-.promo__wrapper {
-  display: flex;
-  flex-direction: column;
+.promo__buttons {
   margin-bottom: 34px;
 }
 
 .promo__button {
   margin: 0;
   padding: 30px;
-  padding-right: auto;
   font-size: 19px;
   font-weight: bold;
   line-height: 24px;
   color: $color-white;
+  display: block;
 }
 
 .promo__button--style-1 {
@@ -64,6 +60,10 @@
     margin-top: -84px;
   }
 
+  .promo__buttons {
+    display: flex;
+  }
+
   .promo__button {
     text-align: center;
   }
@@ -79,6 +79,7 @@
 
 @media (min-width: $desktop-width) {
   .promo__title {
+    padding-top: 161px;
     padding-bottom: 473px;
   }
 
