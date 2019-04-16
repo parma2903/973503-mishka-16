@@ -81,6 +81,7 @@
 @media (min-width: $tablet-width) {
   .hit-sale {
     @include container;
+    margin-bottom: 53px;
   }
 
   .hit-sale__header {
@@ -114,10 +115,6 @@
   .hit-sale__price {
     margin-bottom: 34px;
     font-size: 20px;
-  }
-
-  .hit-sale {
-    margin-bottom: 53px;
   }
 
   .hit-sale__img {
