@@ -4,3 +4,24 @@
 
   list-style: none;
 }
+
+@mixin container-mobile {
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0 auto;
+  max-width: 1150px;
+}
+
+@mixin container {
+  padding-left: 52px;
+  padding-right: 52px;
+  margin: 0 auto;
+  max-width: 1150px;
+}
+
+@mixin content-container {
+  padding-left: 225px;
+  padding-right: 52px;
+  margin: 0 auto;
+  max-width: 1150px;
+}

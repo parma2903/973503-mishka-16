@@ -1,5 +1,7 @@
 .info {
+  @include container-mobile;
   margin-bottom: 61px;
+  margin-top: 34px;
 }
 
 .info__title {
@@ -27,7 +29,9 @@
 
 @media (min-width: $tablet-width) {
   .info {
+    @include container;
     margin-bottom: 168px;
+    margin-top: 60px;
   }
 
   .info__title {
@@ -46,7 +50,9 @@
 
 @media (min-width: $desktop-width) {
   .info {
+    @include content-container;
     margin-bottom: 169px;
+    margin-top: 70px;
   }
 
   .info__title {

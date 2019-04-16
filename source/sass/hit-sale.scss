@@ -1,4 +1,5 @@
 .hit-sale {
+  @include container-mobile;
   margin-bottom: 36px;
 }
 
@@ -78,6 +79,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .hit-sale {
+    @include container;
+  }
+
   .hit-sale__header {
     display: flex;
     justify-content: space-between;
@@ -132,12 +137,17 @@
 }
 
 @media (min-width: $desktop-width) {
+  .hit-sale {
+    @include content-container;
+  }
+
   .hit-sale__img {
     position: absolute;
     width: 525px;
     height: 457px;
     top: -125px;
     right: 0;
+    z-index: -1;
   }
 
   .hit-sale__title {

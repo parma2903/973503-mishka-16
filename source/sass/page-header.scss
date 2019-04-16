@@ -1,11 +1,8 @@
 .page-header {
+  @include container-mobile;
   position: relative;
   margin: 0;
-  margin-left: 30px;
-  margin-right: 30px;
-  padding: 0;
   border-bottom: 1px solid $color-gray;
-  max-width: 1150px;
 }
 
 .page-header__text {
@@ -31,11 +28,10 @@
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
   .page-header {
+    @include container;
     position: relative;
     display: flex;
     justify-content: space-between;
-    padding-left: 51px;
-    padding-right: 51px;
     border-bottom: none;
   }
 
@@ -73,8 +69,7 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
-    padding-left: 51px;
-    padding-right: 51px;
+    @include container;
     border-bottom: none;
   }
 

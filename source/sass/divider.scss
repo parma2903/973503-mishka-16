@@ -1,28 +1,3 @@
 .divider {
-  margin-bottom: 34px;
   background: url("../img/bg-zigzag-line.svg") no-repeat center;
-}
-
-.divider--wide {
-  margin-bottom: 44px;
-}
-
-@media (min-width: $tablet-width) {
-  .divider {
-    margin-bottom: 60px;
-  }
-
-  .divider--wide {
-    margin-bottom: 72px;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .divider {
-    margin-bottom: 70px;
-  }
-
-  .divider--wide {
-    margin-bottom: 152px;
-  }
 }

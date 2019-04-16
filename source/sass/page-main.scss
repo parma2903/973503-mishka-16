@@ -1,11 +1,3 @@
-.page-main {
-  margin: 0;
-  padding: 0;
-  padding-left: 30px;
-  padding-right: 30px;
-  max-width: 1150px;
-}
-
 .page-main__text {
   margin-left: 30px;
   margin-bottom: 0;
@@ -15,14 +7,7 @@
   color: $color-brown;
 }
 
-@media (min-width: $tablet-width) {
-  .page-main {
-    padding-left: 52px;
-    padding-right: 52px;
-  }
-}
-
-@media (min-width: $desktop-width) {
+/*@media (min-width: $desktop-width) {
   .page-main {
     padding-left: 50px;
     padding-right: 50px;
@@ -33,4 +18,4 @@
     margin: 0;
     margin-left: 175px;
   }
-}
+}*/
