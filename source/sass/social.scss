@@ -3,7 +3,6 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 58px;
-  padding-top: 30px;
   width: 141px;
   align-items: center;
   margin-left: 33%;
@@ -14,4 +13,10 @@
   padding: 0;
   text-decoration: none;
   color: red;
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    margin-left: 13%;
+  }
 }

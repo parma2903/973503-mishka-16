@@ -52,4 +52,18 @@
     right: 71px;
     bottom: 0;
   }
+
+  .slider__button {
+    border: none;
+  }
+
+  .slider__button--previous::after {
+    top: 55px;
+    right: 40px;
+  }
+
+  .slider__button--next::after {
+    top: 55px;
+    left: 40px;
+  }
 }
