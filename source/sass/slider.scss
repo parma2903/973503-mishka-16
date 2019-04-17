@@ -1,4 +1,6 @@
 .slider__buttons {
+  width: 100%;
+  height: 52px;
   margin: 0;
   margin-bottom: 38px;
   padding: 0;
@@ -9,6 +11,34 @@
   width: 50%;
   border: solid 1px $color-gray;
   background-color: $color-white;
+}
+
+.slider__button--previous {
+  position: relative;
+}
+
+.slider__button--previous::after {
+  background: url("../img/icon-left-arrow.svg") no-repeat center;
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 26px;
+  top: 13px;
+  right: 73px;
+}
+
+.slider__button--next {
+  position: relative;
+}
+
+.slider__button--next::after {
+  background: url("../img/icon-right-arrow.svg") no-repeat center;
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 26px;
+  top: 13px;
+  left: 73px;
 }
 
 @media (min-width: $tablet-width) {

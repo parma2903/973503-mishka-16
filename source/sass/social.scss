@@ -1,9 +1,12 @@
 .social {
   @include reset-list;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin-bottom: 58px;
   padding-top: 30px;
+  width: 141px;
+  align-items: center;
+  margin-left: 33%;
 }
 
 .social__link {

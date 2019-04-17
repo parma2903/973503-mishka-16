@@ -29,6 +29,14 @@
   vertical-align: top;
 }
 
+.contacts__value {
+  color: $color-brown;
+}
+
+.contacts__value--email {
+  border-bottom: 1px solid $color-blue;
+}
+
 .contacts__map {
   width: calc(100% + 60px);
   margin-left: -30px;
