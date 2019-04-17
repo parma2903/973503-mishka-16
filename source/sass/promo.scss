@@ -46,7 +46,7 @@
 
 @media (min-width: $tablet-width) {
   .promo {
-    margin-bottom: 79px;
+    margin-bottom: 80px;
   }
 
   .promo__wrapper {
@@ -57,9 +57,14 @@
     margin-bottom: 55px;
   }
 
-  .promo__title {
+  .promo--toys .promo__title {
     text-align: center;
     padding-bottom: 490px;
+  }
+
+  .promo__title {
+    padding-bottom: 78px;
+    padding-top: 106px;
   }
 
   .promo__buttons {
@@ -81,6 +86,11 @@
 
 @media (min-width: $desktop-width) {
   .promo__title {
+    padding-top: 76px;
+    padding-bottom: 74px;
+  }
+
+  .promo--toys .promo__title {
     padding-top: 161px;
     padding-bottom: 473px;
   }

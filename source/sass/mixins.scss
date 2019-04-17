@@ -25,3 +25,17 @@
   margin: 0 auto;
   max-width: 1150px;
 }
+
+@mixin container-desktop {
+  padding-left: 114px;
+  padding-right: 225px;
+  margin: 0 auto;
+  max-width: 1150px;
+}
+
+@mixin container-desktop-wide {
+  padding-left: 114px;
+  padding-right: 198px;
+  margin: 0 auto;
+  max-width: 1150px;
+}
