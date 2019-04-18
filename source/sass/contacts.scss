@@ -1,7 +1,8 @@
 .contacts {
-  margin-left: 30px;
-  margin-right: 30px;
+  @include container-mobile;
   margin-bottom: 39px;
+  margin-top: 44px;
+  position: relative;
 }
 
 .contacts__title {
@@ -28,6 +29,37 @@
   vertical-align: top;
 }
 
+.contacts__value {
+  color: $color-brown;
+}
+
+.contacts__value--email {
+  text-decoration: none;
+  border-bottom: 1px solid $color-greeny-blue;
+  color: $color-brown;
+}
+
+.contacts__value--email:hover {
+  color: $color-greeny-blue;
+}
+
+.contacts__value--email:active {
+  color: rgba($color-greeny-blue, 0.3);
+  border-bottom: 1px solid rgba($color-greeny-blue, 0.3);
+}
+
+.contacts__map {
+  width: calc(100% + 60px);
+  margin-left: -30px;
+  margin-right: -30px;
+}
+
+.contacts__pin {
+  position: absolute;
+  right: 188px;
+  top: 377px;
+}
+
 .contacts__button {
   display: block;
   padding: 20px 52px;
@@ -36,9 +68,20 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
-    margin-left: 51px;
-    margin-right: 90px;
+    @include container;
     margin-bottom: 57px;
+    margin-top: 72px;
+    position: relative;
+  }
+
+  .contacts::before {
+    background: url("../img/icon-flag.svg") no-repeat center;
+    position: absolute;
+    content: "";
+    top: -22px;
+    left: 591px;
+    width: 47px;
+    height: 81px;
   }
 
   .contacts__title {
@@ -49,22 +92,55 @@
     margin-bottom: 61px;
   }
 
+  .contacts__list tbody {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contacts__map {
+    width: calc(100% + 104px);
+    margin-left: -52px;
+    margin-right: -52px;
+  }
+
+  .contacts__pin {
+    position: absolute;
+    right: 380px;
+    top: 366px;
+  }
+
   .contacts__button {
     display: block;
-    padding: 20px 41px;
+    width: 35%;
+    padding: 20px 0;
     margin-top: 55px;
-    margin-left: 271px;
-    margin-right: 271px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
   }
 }
 
 @media (min-width: $desktop-width) {
   .contacts {
-    margin-left: 224px;
-    margin-right: 51px;
+    @include content-container;
     margin-bottom: 105px;
-    overflow: hidden;
+    margin-top: 152px;
     position: relative;
+  }
+
+  .contacts::before {
+    background: url("../img/icon-flag.svg") no-repeat center;
+    position: absolute;
+    content: "";
+    top: -22px;
+    left: 60px;
+    width: 47px;
+    height: 81px;
+  }
+
+  .contacts__list tbody {
+    display: table;
+    justify-content: space-between;
   }
 
   .contacts__title {
@@ -73,13 +149,18 @@
 
   .contacts__map {
     position: absolute;
-    right: 100px;
-    top: 100px;
+    width: 525px;
+    top: -127px;
+    right: 126px;
   }
 
   .contacts__pin {
     position: absolute;
-    right: 150px;
-    top: 100px;
+    right: 300px;
+    top: 0;
+  }
+
+  .contacts__button {
+    margin-left: 0;
   }
 }

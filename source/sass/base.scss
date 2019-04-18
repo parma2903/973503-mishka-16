@@ -5,9 +5,12 @@ a {
 body {
   font-family: $font-open-sans;
   color: $color-black;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .button {
+  display: block;
   font: inherit;
   margin: 0;
   padding: 0;
@@ -18,4 +21,51 @@ body {
   color: $color-brown;
   border: solid 2px $color-brown;
   background-color: $color-white;
+}
+
+.button:hover {
+  color: $color-white;
+  border: solid 2px $color-brown;
+  background-color: $color-brown;
+}
+
+.button:active {
+  color: rgba($color-white, 0.3);
+  border: solid 2px $color-brown;
+  background-color: $color-brown;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@font-face {
+  font-weight: normal;
+  font-family: "Open Sans";
+  font-style: normal;
+  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
+}
+
+@font-face {
+  font-weight: bold;
+  font-family: "Open Sans";
+  font-style: normal;
+  src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
 }

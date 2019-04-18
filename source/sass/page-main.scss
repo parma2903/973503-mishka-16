@@ -1,8 +1,13 @@
 .page-main__text {
-  margin-left: 30px;
+  @include container-mobile;
   margin-bottom: 0;
-  margin-right: 48px;
   font-size: 13px;
   line-height: 24px;
   color: $color-brown;
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__text {
+    max-width: 42%;
+  }
 }

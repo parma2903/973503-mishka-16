@@ -1,14 +1,30 @@
 .social {
   @include reset-list;
   display: flex;
-  margin-left: 87px;
+  justify-content: space-between;
   margin-bottom: 58px;
-  padding-top: 30px;
+  width: 141px;
+  align-items: center;
+  margin-left: 33%;
 }
 
 .social__link {
   margin: 0;
   padding: 0;
   text-decoration: none;
-  color: red;
+  color: currentColor;
+}
+
+.social__link:hover {
+  color: $color-greeny-blue;
+}
+
+.social__link:active {
+  color: rgba($color-greeny-blue, 0.3);
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    margin-left: 13%;
+  }
 }

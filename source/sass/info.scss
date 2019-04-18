@@ -1,11 +1,11 @@
 .info {
-  margin-left: 30px;
+  @include container-mobile;
   margin-bottom: 61px;
+  margin-top: 34px;
 }
 
 .info__title {
   margin: 0;
-  margin-bottom: 88px;
   padding: 0;
   font-size: 25px;
   font-weight: bold;
@@ -19,23 +19,107 @@
 
 .info__item {
   margin: 0;
-  margin-bottom: 85px;
   padding: 0;
+  padding-top: 85px;
   font-size: 17px;
   font-weight: bold;
   line-height: 20px;
   color: $color-black;
 }
 
+.info__item--flower {
+  position: relative;
+}
+
+.info__item--flower::after {
+  background: url("../img/icon-feature-flower.svg") no-repeat center;
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 37px;
+  top: 20px;
+  left: 9px;
+}
+
+.info__item--money {
+  position: relative;
+}
+
+.info__item--money::after {
+  background: url("../img/icon-feature-money.svg") no-repeat center;
+  content: "";
+  position: absolute;
+  width: 47px;
+  height: 27px;
+  top: 28px;
+  left: 1px;
+}
+
+.info__item--heart {
+  position: relative;
+}
+
+.info__item--heart::after {
+  background: url("../img/icon-feature-heart.svg") no-repeat center;
+  content: "";
+  position: absolute;
+  width: 34px;
+  height: 27px;
+  top: 23px;
+  left: 8px;
+}
+
+.info__item--ball {
+  position: relative;
+}
+
+.info__item--ball::after {
+  background: url("../img/icon-feature-ball.svg") no-repeat center;
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 34px;
+  top: 20px;
+  left: 3px;
+}
+
+.info__item--rocket {
+  position: relative;
+}
+
+.info__item--rocket::after {
+  background: url("../img/icon-feature-rocket.svg") no-repeat center;
+  content: "";
+  position: absolute;
+  width: 55px;
+  height: 23px;
+  top: 30px;
+  left: 0;
+}
+
+.info__item--present {
+  position: relative;
+}
+
+.info__item--present::after {
+  background: url("../img/icon-feature-gift.svg") no-repeat center;
+  content: "";
+  position: absolute;
+  width: 33px;
+  height: 32px;
+  top: 23px;
+  left: 0;
+}
+
 @media (min-width: $tablet-width) {
   .info {
-    margin-left: 51px;
+    @include container;
     margin-bottom: 168px;
+    margin-top: 60px;
   }
 
   .info__title {
     font-size: 43px;
-    margin-bottom: 104px;
   }
 
   .info__list {
@@ -43,20 +127,20 @@
   }
 
   .info__item {
-    margin-bottom: 112px;
+    padding-top: 112px;
     font-size: 20px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .info {
-    margin-left: 225px;
+    @include content-container;
     margin-bottom: 169px;
+    margin-top: 70px;
   }
 
   .info__title {
     font-size: 53px;
-    margin-bottom: 101px;
   }
 
   .info__list {
@@ -65,5 +149,10 @@
 
   .info__item {
     font-size: 20px;
+  }
+
+  .info__item--flower,
+  .info__item--clew {
+    padding-top: 101px;
   }
 }

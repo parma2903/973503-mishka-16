@@ -1,17 +1,28 @@
+.goods {
+  @include container-mobile;
+}
+
 .goods__list {
   @include reset-list;
 }
 
 .goods__img {
-  margin-left: 30px;
-  margin-right: 30px;
+  width: 100%;
+}
+
+.goods__info:hover {
+  box-shadow: (0 6px 10px 0 rgba($color-black, 0.1));
+}
+
+.goods__info:active {
+  box-shadow: (0 3px 5px 0 rgba($color-black, 0.1));
 }
 
 .goods__title {
+  display: block;
   margin: 0;
   margin-bottom: 17px;
   padding: 0;
-  padding-left: 28px;
   padding-top: 31px;
   font-size: 17px;
   font-weight: bold;
@@ -19,11 +30,19 @@
   color: $color-black;
 }
 
+.goods__title:hover {
+  color: rgba($color-black, 0.6);
+}
+
+.goods__title:active {
+  color: rgba($color-black, 0.3);
+}
+
 .goods__text {
+  display: block;
   margin: 0;
-  margin-bottom: 55px;
   padding: 0;
-  padding-left: 29px;
+  padding-bottom: 55px;
   font-size: 13px;
   line-height: 30px;
   color: $color-brown;
@@ -32,42 +51,58 @@
 .goods__price {
   margin: 0;
   padding: 0;
-  padding-left: 29px;
   padding-top: 27px;
   padding-bottom: 30px;
   font-size: 15px;
   font-weight: bold;
   line-height: 24px;
   color: $color-black;
-  border-top: 1px solid $color-gray;
+  display: inline-block;
+}
+
+.goods__cart {
+  padding-top: 31px;
+  opacity: 0.2;
+}
+
+.goods__cart:hover {
+  color: $color-blue;
+}
+
+.goods__cart:active {
+  color: $color-blue;
+  opacity: 0.3;
 }
 
 .goods__info {
-  margin-left: 30px;
-  margin-right: 30px;
   margin-bottom: 30px;
+  margin-top: -3px;
+  padding: 0 28px;
   border: 1px solid $color-gray;
 }
 
+.goods__buy {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid $color-gray;
+}
+
 @media (min-width: $tablet-width) {
-  .goods__wrapper {
-    display: flex;
+  .goods {
+    @include container;
   }
 
   .goods__item {
     display: flex;
-  }
-
-  .goods__info {
-    width: 335px;
-    margin-left: 0;
-    margin-right: 50px;
     margin-bottom: 54px;
   }
 
-  .goods__img {
-    margin-left: 52px;
-    margin-right: 0;
+  .goods__info {
+    margin: 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .goods__title {
@@ -76,12 +111,11 @@
   }
 
   .goods__text {
-    margin-bottom: 210px;
     font-size: 15px;
+    padding: 0;
   }
 
   .goods__price {
-    padding-left: 33px;
     padding-top: 27px;
     padding-bottom: 29px;
     font-size: 17px;
@@ -89,26 +123,24 @@
 }
 
 @media (min-width: $desktop-width) {
+  .goods__item {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
   .goods__list {
     display: flex;
     justify-content: space-around;
   }
 
-  .goods__wrapper {
-    display: flex;
-    flex-direction: column;
-  }
-
   .goods__info {
     margin: 0;
+    margin-top: -3px;
   }
 
   .goods__text {
     margin-bottom: 43px;
-  }
-
-  .goods__price {
-    padding-left: 29px;
   }
 
   .goods {

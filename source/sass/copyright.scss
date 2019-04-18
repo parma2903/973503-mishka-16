@@ -1,7 +1,6 @@
 .copyright {
-  display: flex;
-  margin-left: 69px;
-  margin-bottom: 31px;
+  text-align: center;
+  padding-bottom: 31px;
 }
 
 .copyright__text {
@@ -9,6 +8,35 @@
   font-weight: bold;
   line-height: 18px;
   color: $color-black;
+}
+
+.copyright__text:active {
+  color: rgba($color-black, 0.3);
+}
+
+.copyright__logo {
+  padding-left: 30px;
+  margin-bottom: -10px;
+}
+
+.copyright__link {
+  color: $color-blue;
+  height: 34px;
+  width: 102px;
+}
+
+.copyright__link:hover {
+  color: $color-greeny-blue;
+}
+
+.copyright__link:active {
+  color: rgba($color-greeny-blue, 0.3);
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    padding-bottom: 0;
+  }
 }
 
 @media (min-width: $desktop-width) {

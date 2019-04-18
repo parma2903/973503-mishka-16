@@ -1,4 +1,8 @@
-.page-footer__logo-image {
+.page-footer__wrapper {
+  padding-top: 30px;
+}
+
+.page-footer__logo {
   display: none;
 }
 
@@ -8,20 +12,30 @@
 
 @media (min-width: $tablet-width) {
   .page-footer__wrapper {
+    @include container;
     display: flex;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 58px;
+    justify-content: space-between;
     padding-top: 51px;
   }
 
-  .page-footer__logo-image {
+  .page-footer__logo {
+    color: currentColor;
     display: block;
+    height: 34px;
+    width: 102px;
+  }
+
+  .page-footer__logo:hover {
+    color: $color-greeny-blue;
+  }
+
+  .page-footer__logo:active {
+    color: rgba($color-greeny-blue, 0.3);
   }
 }
 
 @media (min-width: $desktop-width) {
-  .page-footer__logo-image {
+  .page-footer__logo {
     margin-right: 159px;
   }
 }
