@@ -12,7 +12,15 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
-  color: red;
+  color: currentColor;
+}
+
+.social__link:hover {
+  color: $color-greeny-blue;
+}
+
+.social__link:active {
+  color: rgba($color-greeny-blue, 0.3);
 }
 
 @media (min-width: $tablet-width) {

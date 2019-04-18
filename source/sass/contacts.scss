@@ -34,7 +34,18 @@
 }
 
 .contacts__value--email {
-  border-bottom: 1px solid $color-blue;
+  text-decoration: none;
+  border-bottom: 1px solid $color-greeny-blue;
+  color: $color-brown;
+}
+
+.contacts__value--email:hover {
+  color: $color-greeny-blue;
+}
+
+.contacts__value--email:active {
+  color: rgba($color-greeny-blue, 0.3);
+  border-bottom: 1px solid rgba($color-greeny-blue, 0.3);
 }
 
 .contacts__map {

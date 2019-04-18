@@ -5,12 +5,18 @@
   margin-bottom: 38px;
   padding: 0;
   display: flex;
+  border: none;
 }
 
 .slider__button {
   width: 50%;
   border: solid 1px $color-gray;
   background-color: $color-white;
+}
+
+.slider__button:hover {
+  background-color: transparent;
+  border: solid 1px $color-gray;
 }
 
 .slider__button--previous {
@@ -27,6 +33,15 @@
   right: 73px;
 }
 
+.slider__button--previous:hover::after {
+  opacity: 0.6;
+}
+
+.slider__button--previous:active::after {
+  opacity: 0.3;
+}
+
+
 .slider__button--next {
   position: relative;
 }
@@ -41,29 +56,47 @@
   left: 73px;
 }
 
+.slider__button--next:hover::after {
+  opacity: 0.6;
+}
+
+.slider__button--next:active::after {
+  opacity: 0.3;
+}
+
+
 @media (min-width: $tablet-width) {
   .slider__slide {
     position: relative;
   }
 
   .slider__buttons {
-    width: 137px;
+    width: 200px;
     position: absolute;
     right: 71px;
-    bottom: 0;
+    bottom: -28px;
   }
 
   .slider__button {
     border: none;
   }
 
+  .slider__button:hover {
+    background-color: transparent;
+    border: none;
+  }
+
+  .slider__button:active {
+    border: none;
+  }
+
   .slider__button--previous::after {
-    top: 55px;
+    top: 14px;
     right: 40px;
   }
 
   .slider__button--next::after {
-    top: 55px;
-    left: 40px;
+    top: 16px;
+    left: 33px;
   }
 }

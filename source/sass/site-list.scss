@@ -13,6 +13,14 @@
   border-bottom: 1px solid $color-gray;
 }
 
+.site-list__item:hover {
+  opacity: 0.6;
+}
+
+.site-list__item:active {
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
   .site-list {
     margin: 0;

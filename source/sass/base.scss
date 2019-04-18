@@ -23,6 +23,18 @@ body {
   background-color: $color-white;
 }
 
+.button:hover {
+  color: $color-white;
+  border: solid 2px $color-brown;
+  background-color: $color-brown;
+}
+
+.button:active {
+  color: rgba($color-white, 0.3);
+  border: solid 2px $color-brown;
+  background-color: $color-brown;
+}
+
 img {
   max-width: 100%;
   height: auto;

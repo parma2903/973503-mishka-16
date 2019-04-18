@@ -6,6 +6,18 @@
   @include reset-list;
 }
 
+.goods__img {
+  width: 100%;
+}
+
+.goods__info:hover {
+  box-shadow: (0 6px 10px 0 rgba($color-black, 0.1));
+}
+
+.goods__info:active {
+  box-shadow: (0 3px 5px 0 rgba($color-black, 0.1));
+}
+
 .goods__title {
   display: block;
   margin: 0;
@@ -16,6 +28,14 @@
   font-weight: bold;
   line-height: 24px;
   color: $color-black;
+}
+
+.goods__title:hover {
+  color: rgba($color-black, 0.6);
+}
+
+.goods__title:active {
+  color: rgba($color-black, 0.3);
 }
 
 .goods__text {
@@ -38,6 +58,20 @@
   line-height: 24px;
   color: $color-black;
   display: inline-block;
+}
+
+.goods__cart {
+  padding-top: 31px;
+  opacity: 0.2;
+}
+
+.goods__cart:hover {
+  color: $color-blue;
+}
+
+.goods__cart:active {
+  color: $color-blue;
+  opacity: 0.3;
 }
 
 .goods__info {

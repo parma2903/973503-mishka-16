@@ -145,8 +145,12 @@
     width: 525px;
     height: 457px;
     top: -125px;
-    right: 0;
+    right: 49px;
     z-index: -1;
+  }
+
+  .hit-sale__header {
+    position: relative;
   }
 
   .hit-sale__title {
@@ -158,6 +162,10 @@
   .hit-sale__subtitle {
     order: 1;
     margin-left: -70px;
+    position: absolute;
+    content: "Товар недели";
+    top: -4px;
+    left: -49px;
   }
 
   .hit-sale__button {
