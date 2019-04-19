@@ -1,11 +1,15 @@
 .social {
   @include reset-list;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  margin: 0 auto;
   margin-bottom: 58px;
-  width: 141px;
   align-items: center;
-  margin-left: 33%;
+}
+
+.social__item:nth-child(2) {
+  margin-right: 41px;
+  margin-left: 41px;
 }
 
 .social__link {
