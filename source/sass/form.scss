@@ -1,13 +1,13 @@
-.order-form-group,
-.order-form-row__wrapper {
+.form-group,
+.form-row__wrapper {
   @include container-mobile;
 }
 
-.order-form-group__wrapper--radio label {
+.form-group__wrapper--radio label {
   position: relative;
 }
 
-.order-form__radio {
+.form__radio {
   position: absolute;
   content: "";
   display: inline-block;
@@ -20,11 +20,11 @@
   border-radius: 100%;
 }
 
-.order-form-row__wrapper-add label {
+.form-row__wrapper-add label {
   position: relative;
 }
 
-.order-form__checkbox {
+.form__checkbox {
   position: absolute;
   content: "";
   display: inline-block;
@@ -36,29 +36,29 @@
   border: 2px solid $color-brown;
 }
 
-.order-form input {
-  font: inherit;
+.form input {
+  font-family: inherit;
 }
 
-input[type="radio"]:checked + .order-form__radio {
+input[type="radio"]:checked + .form__radio {
   background-color: red;
 }
 
-input[type="checkbox"]:checked + .order-form__checkbox {
+input[type="checkbox"]:checked + .form__checkbox {
   background: url("../img/icon-tick.svg") no-repeat center;
 }
 
-.order-form__radio:hover,
-.order-form__checkbox:hover {
+.form__radio:hover,
+.form__checkbox:hover {
   border: 1px solid $color-blue;
 }
 
-.order-form__radio:active,
-.order-form__checkbox:active {
+.form__radio:active,
+.form__checkbox:active {
   border: 1px solid rgba($color-brown, 0.3);
 }
 
-.order-form__title {
+.form__title {
   position: relative;
   margin: 0;
   padding-top: 34px;
@@ -68,7 +68,7 @@ input[type="checkbox"]:checked + .order-form__checkbox {
   color: $color-blue;
 }
 
-.order-form__title::after {
+.form__title::after {
   content: "";
   position: absolute;
   width: 80%;
@@ -78,31 +78,31 @@ input[type="checkbox"]:checked + .order-form__checkbox {
   background-color: $color-blue;
 }
 
-input.order-form__text:focus + span {
+input.form__text:focus + span {
   outline: 1px solid #81b3d2;
 }
 
-.order-form__title--type {
+.form__title--type {
   margin-bottom: 38px;
 }
 
-.order-form__title--color {
+.form__title--color {
   margin-bottom: 35px;
 }
 
-.order-form__title--initials {
+.form__title--initials {
   margin-bottom: 33px;
 }
 
-.order-form__title--telephone {
+.form__title--telephone {
   margin-bottom: 25px;
 }
 
-.order-form__input--telephone {
+.form__input--telephone {
   position: relative;
 }
 
-.order-form__input--telephone::after {
+.form__input--telephone::after {
   position: absolute;
   content: "";
   background: url("../img/icon-phone.svg") no-repeat center;
@@ -113,25 +113,25 @@ input.order-form__text:focus + span {
   opacity: 0.2;
 }
 
-.order-form__input--telephone:hover .order-form__input--telephone::after,
-.order-form__input--email:hover .order-form__input--email::after {
+.form__input--telephone:hover .form__input--telephone::after,
+.form__input--email:hover .form__input--email::after {
   fill: $color-blue;
 }
 
-.order-form__input--telephone:active .order-form__input--telephone::after,
-.order-form__input--email:active .order-form__input--email::after {
+.form__input--telephone:active .form__input--telephone::after,
+.form__input--email:active .form__input--email::after {
   fill: $color-blue;
 }
 
-.order-form__title--email {
+.form__title--email {
   margin-bottom: 27px;
 }
 
-.order-form__input--email {
+.form__input--email {
   position: relative;
 }
 
-.order-form__input--email::after {
+.form__input--email::after {
   position: absolute;
   content: "";
   background: url("../img/icon-mail.svg") no-repeat center;
@@ -142,11 +142,11 @@ input.order-form__text:focus + span {
   opacity: 0.2;
 }
 
-.order-form__title--addition {
+.form__title--addition {
   margin-bottom: 23px;
 }
 
-.order-form__text {
+.form__text {
   display: inline-block;
   margin: 0;
   padding: 0;
@@ -157,58 +157,59 @@ input.order-form__text:focus + span {
   color: $color-black;
 }
 
-.order-form__text--accessories {
+.form__text--accessories {
   padding-bottom: 25px;
   max-width: 154px;
 }
 
-.order-form__text--color-value {
+.form__text--color-value {
   margin-bottom: 46px;
 }
 
-.order-form__text--initials {
+.form__text--initials {
   margin-bottom: 20px;
   padding: 0;
 }
 
-.order-form__input {
+.form__input {
+  font-family: inherit;
   font-size: 17px;
   line-height: 18px;
-  color: $color-light-gray;
+  color: $color-black;
 }
 
-.order-form__input--initials {
+.form__input--initials {
   margin-bottom: 24px;
   border: none;
   border-bottom: 2px solid $color-black;
   width: 100%;
 }
 
-.order-form__input:hover {
+.form__input:hover {
   border-bottom: 2px solid $color-blue;
 }
 
-.order-form__input:active {
+.form__input:active {
   border-bottom: 2px solid $color-blue;
   color: $color-brown;
 }
 
-.order-form__input--telephone,
-.order-form__input--email {
+.form__input--telephone,
+.form__input--email {
   border: none;
   border-bottom: 2px solid $color-black;
 }
 
-.order-form__input--addition:hover {
+.form__input--addition:hover {
   border: 2px solid $color-blue;
 }
 
-.order-form__input--addition {
+.form__input--addition {
   border: 2px solid black;
   width: 100%;
 }
 
-.order-form__text--necessary {
+.form__text--necessary {
   @include container-mobile;
   font-size: 14px;
   line-height: 16px;
@@ -218,7 +219,7 @@ input.order-form__text:focus + span {
   color: $color-brown;
 }
 
-.order-form__button {
+.form__button {
   margin-left: 30px;
   margin-right: 30px;
   margin-bottom: 55px;
@@ -228,150 +229,150 @@ input.order-form__text:focus + span {
 }
 
 @media (min-width: $tablet-width) {
-  .order-form-group {
+  .form-group {
     @include container;
     display: flex;
     margin-top: 67px;
     margin-bottom: 50px;
   }
 
-  .order-form-group__wrapper {
+  .form-group__wrapper {
     width: 75%;
   }
 
-  .order-form-row {
+  .form-row {
     margin: 0;
     padding-top: 69px;
     padding-bottom: 50px;
     background-color: $color-gray;
   }
 
-  .order-form-row__wrapper {
+  .form-row__wrapper {
     @include container;
     display: flex;
   }
 
-  .order-form__title {
+  .form__title {
     display: block;
     width: 25%;
     padding-top: 0;
   }
 
-  .order-form__title::after {
+  .form__title::after {
     display: none;
   }
 
-  .order-form__text--accessories {
+  .form__text--accessories {
     margin-bottom: 57px;
     max-width: 300px;
   }
 
-  .order-form-row__wrapper-add {
+  .form-row__wrapper-add {
     column-count: 2;
     flex: 1;
   }
 
-  .order-form__text--color-value:nth-child(3n) {
+  .form__text--color-value:nth-child(3n) {
     margin-bottom: 0;
   }
 
-  .order-form__text--initials {
+  .form__text--initials {
     width: 15%;
   }
 
-  .order-form__input--initials {
+  .form__input--initials {
     width: 76%;
     margin-left: 25px;
   }
 
-  .order-form-group--initials br {
+  .form-group--initials br {
     display: none;
   }
 
-  .order-form__text--initials:last-child {
+  .form__text--initials:last-child {
     margin-bottom: 0;
   }
 
-  .order-form__input--initials:last-child {
+  .form__input--initials:last-child {
     margin-bottom: 0;
   }
 
-  .order-form__input {
+  .form__input {
     background-color: transparent;
   }
 
-  .order-form-row__wrapper--telephone {
+  .form-row__wrapper--telephone {
     display: block;
   }
 
-  .order-form__title--telephone,
-  .order-form__title--email {
+  .form__title--telephone,
+  .form__title--email {
     display: inline-block;
     width: 25%;
   }
 
-  .order-form__title--telephone {
+  .form__title--telephone {
     margin-bottom: 64px;
   }
 
-  .order-form__title--email {
+  .form__title--email {
     margin-bottom: 0;
   }
 
-  .order-form__input--telephone,
-  .order-form__input--email {
+  .form__input--telephone,
+  .form__input--email {
     width: 74%;
   }
 
-  .order-form__input--addition {
+  .form__input--addition {
     margin-top: -14px;
   }
 
-  .order-form__text--necessary {
+  .form__text--necessary {
     float: right;
   }
 
-  .order-form__button {
+  .form__button {
     width: 230px;
   }
 }
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-  .order-form__text--color-value--tiffani {
+  .form__text--color-value--tiffani {
     margin-bottom: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .order-form-group {
+  .form-group {
     @include container-desktop;
     margin-bottom: 50px;
     margin-top: 67px;
   }
 
-  .order-form-row__wrapper {
+  .form-row__wrapper {
     @include container-desktop-wide;
   }
 
-  .order-form-row__wrapper--telephone {
+  .form-row__wrapper--telephone {
     @include container-desktop;
   }
 
-  .order-form-row__wrapper-add {
+  .form-row__wrapper-add {
     column-count: 3;
   }
 
-  .order-form__text--color-value:nth-child(n) {
+  .form__text--color-value:nth-child(n) {
     margin-bottom: 0;
   }
 
-  .order-form__button {
+  .form__button {
     margin-left: 23%;
     width: 230px;
     margin-bottom: 50px;
   }
 
-  .order-form__text--necessary {
+  .form__text--necessary {
     margin-right: 219px;
   }
 }

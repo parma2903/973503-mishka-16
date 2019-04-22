@@ -54,12 +54,6 @@
   margin-right: -30px;
 }
 
-.contacts__pin {
-  position: absolute;
-  right: 188px;
-  top: 377px;
-}
-
 .contacts__button {
   display: block;
   padding: 20px 52px;
@@ -103,15 +97,9 @@
     margin-right: -52px;
   }
 
-  .contacts__pin {
-    position: absolute;
-    right: 380px;
-    top: 366px;
-  }
-
   .contacts__button {
     display: block;
-    width: 35%;
+    max-width: 230px;
     padding: 20px 0;
     margin-top: 55px;
     margin-left: auto;
@@ -152,12 +140,6 @@
     width: 525px;
     top: -127px;
     right: 126px;
-  }
-
-  .contacts__pin {
-    position: absolute;
-    right: 300px;
-    top: 0;
   }
 
   .contacts__button {

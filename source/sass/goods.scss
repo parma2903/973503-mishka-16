@@ -8,6 +8,15 @@
 
 .goods__img {
   width: 100%;
+  display: block;
+}
+
+.goods__info {
+  padding: 0 28px;
+  padding-top: 31px;
+  margin-bottom: 30px;
+  margin-top: -3px;
+  border: 1px solid $color-gray;
 }
 
 .goods__info:hover {
@@ -51,8 +60,6 @@
 .goods__price {
   margin: 0;
   padding: 0;
-  padding-top: 27px;
-  padding-bottom: 30px;
   font-size: 15px;
   font-weight: bold;
   line-height: 24px;
@@ -61,7 +68,6 @@
 }
 
 .goods__cart {
-  padding-top: 31px;
   opacity: 0.2;
 }
 
@@ -74,14 +80,9 @@
   opacity: 0.3;
 }
 
-.goods__info {
-  margin-bottom: 30px;
-  margin-top: -3px;
-  padding: 0 28px;
-  border: 1px solid $color-gray;
-}
-
 .goods__buy {
+  padding-top: 27px;
+  padding-bottom: 30px;
   display: flex;
   justify-content: space-between;
   border-top: 1px solid $color-gray;
@@ -107,6 +108,7 @@
 
   .goods__title {
     margin-bottom: 15px;
+    padding-top: 0;
     font-size: 20px;
   }
 
@@ -116,8 +118,6 @@
   }
 
   .goods__price {
-    padding-top: 27px;
-    padding-bottom: 29px;
     font-size: 17px;
   }
 }

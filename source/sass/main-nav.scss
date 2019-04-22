@@ -10,7 +10,7 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: -28px;
+  top: -50px;
   right: 30px;
   width: 22px;
   height: 16px;
@@ -63,5 +63,6 @@
 @media (min-width: $tablet-width) {
   .main-nav {
     display: flex;
+    position: static;
   }
 }

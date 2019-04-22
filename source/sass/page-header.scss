@@ -1,9 +1,7 @@
 .page-header {
   position: relative;
   margin: 0;
-  padding-bottom: 22px;
   padding-top: 22px;
-  border-bottom: 1px solid $color-gray;
 }
 
 .page-header__text {
@@ -14,7 +12,8 @@
   width: 86px;
   height: auto;
   display: block;
-  margin-left: 30px;
+  margin: 0 auto;
+  padding-bottom: 22px;
 }
 
 .page-header__logo picture {
@@ -37,6 +36,7 @@
     display: flex;
     justify-content: space-between;
     border-bottom: none;
+    padding-top: 0;
   }
 
   .page-header__text {
@@ -47,6 +47,11 @@
     bottom: -54px;
     margin: 0;
     padding: 0;
+  }
+
+  .page-header__logo {
+    margin: 0;
+    padding-top: 22px;
   }
 
   .page-header__logo img {

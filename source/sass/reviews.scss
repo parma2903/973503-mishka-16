@@ -85,7 +85,7 @@
   .review__button {
     font-size: 17px;
     position: absolute;
-    right: 52px;
+    right: 50px;
     top: 0;
     width: 26%;
   }
@@ -109,5 +109,9 @@
   .reviews__text {
     margin-bottom: 49px;
     margin-right: 157px;
+  }
+
+  .review__button {
+    right: 0;
   }
 }

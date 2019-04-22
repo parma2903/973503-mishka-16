@@ -121,7 +121,6 @@
 
   .hit-sale__img {
     position: absolute;
-    content: "";
     top: -45px;
     right: 0;
     width: 333px;
@@ -145,7 +144,7 @@
     width: 525px;
     height: 457px;
     top: -125px;
-    right: 49px;
+    right: 0;
     z-index: -1;
   }
 
@@ -161,7 +160,7 @@
 
   .hit-sale__subtitle {
     order: 1;
-    margin-left: -70px;
+    margin-left: -110px;
     position: absolute;
     content: "Товар недели";
     top: -4px;

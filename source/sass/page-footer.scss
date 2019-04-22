@@ -1,5 +1,6 @@
 .page-footer__wrapper {
   padding-top: 30px;
+  padding-bottom: 31px;
 }
 
 .page-footer__logo {
@@ -15,7 +16,8 @@
     @include container;
     display: flex;
     justify-content: space-between;
-    padding-top: 51px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   .page-footer__logo {
