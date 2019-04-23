@@ -5,7 +5,7 @@
 
 .form__field label {
   position: relative;
-  margin-bottom: 46px;
+  padding-left: 59px;
 }
 
 .form__field:last-child label {
@@ -29,13 +29,26 @@
   padding-bottom: 25px;
 }
 
-.form__field:first-child {
+.form__field--type1:first-child {
   max-width: 188px;
+}
+
+.form__field--type2 label {
+  padding-bottom: 46px;
+}
+
+.form__field--type2:last-child label {
+  padding-bottom: 0;
 }
 
 .form__field:last-child {
   padding-bottom: 0;
   margin-bottom: 0;
+}
+
+.form__field--type3 label {
+  padding-left: 0;
+  padding-bottom: 25px;
 }
 
 .form-row__wrapper-add label {
@@ -182,7 +195,7 @@ input.form__text:focus + span {
   color: $color-black;
 }
 
-.form__field-type1 input {
+.form__field input {
   margin-bottom: 24px;
   border: none;
   border-bottom: 2px solid $color-black;
@@ -238,6 +251,34 @@ input.form__text:focus + span {
     @include container;
     display: flex;
     padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .form__title--type,
+  .form__title--color,
+  .form__title--initials,
+  .form__title--telephone,
+  .form__title--email,
+  .form__title--addition {
+    padding: 0;
+    margin: 0;
+  }
+
+  .form__field--type1 label {
+    padding-bottom: 57px;
+  }
+
+  .form__field--type2 label {
+    padding-bottom: 60px;
+  }
+
+  .form__field--type2:last-child label {
+    padding-bottom: 0;
+  }
+
+  .form__field--type3 label {
+    padding-left: 0;
+    padding-bottom: 0;
   }
 
   .form-group__wrapper {
@@ -245,7 +286,6 @@ input.form__text:focus + span {
     flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
-    height: 195px;
   }
 
   .form-group-gray {
@@ -257,14 +297,10 @@ input.form__text:focus + span {
     @include container;
     display: flex;
     padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   .form__title--color {
-    margin-bottom: 0;
-  }
-
-  .form__field:nth-child(3n) label {
-    padding-bottom: 0;
     margin-bottom: 0;
   }
 
@@ -284,28 +320,33 @@ input.form__text:focus + span {
   }
 
   .form__field:first-child {
-    max-width: 300px;
+    max-width: 100%;
   }
 
   .form__field:nth-child(3n) {
     margin-bottom: 0;
   }
 
-  .form-group__wrapper-type1 {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .form__field-type1 {
+  .form__field--type3 {
     padding: 0;
-    padding-bottom: 61px;
+    padding-bottom: 0;
     margin: 0;
   }
 
-  .form__field-type1 input {
-    width: 76%;
+  .form__field input {
+    width: 82%;
     margin-left: 25px;
+    padding-left: 0;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+  }
+
+  .form__field--type3:first-child input {
+    width: 89%;
+  }
+
+  .form__field--type3:last-child input {
+    margin-bottom: 0;
   }
 
   .form-group--initials br {
@@ -391,13 +432,9 @@ input.form__text:focus + span {
     @include container-desktop-wide;
   }
 
-  .form-group__wrapper {
-    height: 145px;
-  }
-
-  .form__field:nth-child(3n) {
+  /*.form__field:nth-child(3n) {
     margin-bottom: 46px;
-  }
+  }*/
 
   .form__field:nth-child(2n) {
     margin-bottom: 0;
@@ -407,17 +444,22 @@ input.form__text:focus + span {
     @include container-desktop;
   }
 
+  .form__input--telephone,
+  .form__input--email {
+    width: 85%;
+  }
+
   .form__text--color-value:nth-child(n) {
     margin-bottom: 0;
   }
 
   .form__button {
-    margin-left: 23%;
+    margin-left: 0;
     width: 230px;
-    margin-bottom: 50px;
+    margin-bottom: 0;
   }
 
   .form__text--necessary {
-    margin-right: 219px;
+    margin-right: 0;
   }
 }

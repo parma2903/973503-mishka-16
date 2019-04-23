@@ -9,6 +9,10 @@
   border: 1px solid $color-gray;
 }
 
+.producing__wrapper {
+  @include container-mobile;
+}
+
 .producing:hover {
   box-shadow: (0 6px 10px 0 rgba($color-black, 0.1));
 }
@@ -91,11 +95,15 @@
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
   .producing {
-    margin-left: 52px;
-    margin-right: 52px;
+    margin-left: 0;
+    margin-right: 0;
     margin-bottom: 63px;
     display: flex;
     flex-direction: column;
+  }
+
+  .producing__wrapper {
+    @include container;
   }
 
   .producing__image {
@@ -123,21 +131,28 @@
 
 @media (min-width: $desktop-width) {
   .producing {
-    width: 30%;
-    padding-left: 65%;
-    padding-top: 94px;
-    margin-left: 52px;
-    margin-right: 52px;
-    margin-bottom: 105px;
+    width: auto;
+    padding-left: 60%;
+    margin: 0;
     position: relative;
   }
 
-  .producing__image {
+  .producing__wrapper {
+    @include container;
+    margin-bottom: 50px;
+  }
+
+  .producing__video {
     position: absolute;
-    width: 50%;
-    height: auto;
-    top: 0;
+    content: "";
+    right: 0;
     left: 0;
+    width: 500px;
+    height: auto;
+  }
+
+  .producing__image {
+    margin: 0;
   }
 
   .producing__title {

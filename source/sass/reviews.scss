@@ -83,11 +83,12 @@
   }
 
   .review__button {
+    padding: 20px 41px;
     font-size: 17px;
     position: absolute;
     right: 50px;
     top: 0;
-    width: 26%;
+    width: auto;
   }
 }
 
@@ -99,7 +100,7 @@
 
   .reviews::before {
     top: -52px;
-    left: 57px;
+    left: 0;
   }
 
   .reviews__title {

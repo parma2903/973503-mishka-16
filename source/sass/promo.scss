@@ -15,8 +15,10 @@
 
 .promo--toys .promo__title {
   padding-top: 77px;
-  padding-bottom: 120px;
+  padding-bottom: 135px;
   text-align: center;
+  max-width: 224px;
+  margin: 0 auto;
 }
 
 .promo__title {
@@ -116,6 +118,7 @@
     text-align: center;
     padding-bottom: 490px;
     padding-top: 161px;
+    max-width: 494px;
   }
 
   .promo__title {
@@ -125,10 +128,11 @@
 
   .promo__buttons {
     display: flex;
+    width: 100%;
   }
 
   .promo__button {
-    text-align: center;
+    text-align: left;
   }
 
   .promo--toys::after {
@@ -141,11 +145,11 @@
   }
 
   .promo__button--style-1 {
-    padding-right: 186px;
+    width: 100%;
   }
 
   .promo__button--style-2 {
-    padding-right: 204px;
+    width: 100%;
   }
 }
 
