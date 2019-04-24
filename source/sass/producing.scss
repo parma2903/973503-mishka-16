@@ -1,4 +1,4 @@
-.producing {
+.producing-wrapper {
   position: relative;
   margin-left: 30px;
   margin-right: 30px;
@@ -9,15 +9,15 @@
   border: 1px solid $color-gray;
 }
 
-.producing__wrapper {
+.producing {
   @include container-mobile;
 }
 
-.producing:hover {
+.producing-wrapper:hover {
   box-shadow: (0 6px 10px 0 rgba($color-black, 0.1));
 }
 
-.producing:active {
+.producing-wrapper:active {
   box-shadow: (0 3px 5px 0 rgba($color-black, 0.1));
 }
 
@@ -94,7 +94,7 @@
 }
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-  .producing {
+  .producing-wrapper {
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 63px;
@@ -102,7 +102,7 @@
     flex-direction: column;
   }
 
-  .producing__wrapper {
+  .producing {
     @include container;
   }
 
@@ -130,14 +130,14 @@
 }
 
 @media (min-width: $desktop-width) {
-  .producing {
+  .producing-wrapper {
     width: auto;
     padding-left: 60%;
     margin: 0;
     position: relative;
   }
 
-  .producing__wrapper {
+  .producing {
     @include container;
     margin-bottom: 50px;
   }

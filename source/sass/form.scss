@@ -1,5 +1,4 @@
-.form-group,
-.form-group-wide {
+.form-group {
   @include container-mobile;
 }
 
@@ -98,17 +97,18 @@ input[type="checkbox"]:checked + .form__checkbox {
 
 .form__radio:hover,
 .form__checkbox:hover {
-  border: 1px solid $color-blue;
+  border: 2px solid $color-blue;
 }
 
 .form__radio:active,
 .form__checkbox:active {
-  border: 1px solid rgba($color-brown, 0.3);
+  border: 2px solid rgba($color-brown, 0.3);
 }
 
 .form__title {
   position: relative;
   margin: 0;
+  padding-bottom: 25px;
   padding-top: 34px;
   font-size: 17px;
   font-weight: bold;
@@ -130,7 +130,7 @@ input.form__text:focus + span {
   outline: 1px solid #81b3d2;
 }
 
-.form__title--type {
+/*.form__title--type {
   margin-bottom: 38px;
 }
 
@@ -144,45 +144,47 @@ input.form__text:focus + span {
 
 .form__title--telephone {
   margin-bottom: 25px;
+}*/
+
+.form-row {
   position: relative;
 }
 
-.form__title--telephone::after {
+.form__icon-phone {
   position: absolute;
   content: "";
   background: url("../img/icon-phone.svg") no-repeat center;
-  top: 146%;
-  left: 96%;
+  bottom: 29px;
+  right: 3px;
   width: 25px;
   height: 24px;
   opacity: 0.2;
 }
 
-.form__input--telephone:hover .form__input--telephone::after,
-.form__input--email:hover .form__input--email::after {
+.form__icon-mail {
+  position: absolute;
+  content: "";
+  background: url("../img/icon-mail.svg") no-repeat center;
+  bottom: 29px;
+  right: 3px;
+  width: 32px;
+  height: 21px;
+  opacity: 0.2;
+}
+
+.form__icon-phone:hover,
+.form__icon-mail:hover {
   fill: $color-blue;
 }
 
-.form__input--telephone:active .form__input--telephone::after,
-.form__input--email:active .form__input--email::after {
+.form__icon-phone:active,
+.form__icon-mail:active {
   fill: $color-blue;
 }
 
 .form__title--email {
   margin-bottom: 27px;
   position: relative;
-}
-
-
-.form__title--email::after {
-  position: absolute;
-  content: "";
-  background: url("../img/icon-mail.svg") no-repeat center;
-  top: 150%;
-  left: 94%;
-  width: 32px;
-  height: 22px;
-  opacity: 0.2;
 }
 
 .form__title--addition {
@@ -205,9 +207,6 @@ input.form__text:focus + span {
   font-size: 17px;
   line-height: 18px;
   color: $color-black;
-}
-
-.form__field input {
   margin-bottom: 24px;
   border: none;
   border-bottom: 2px solid $color-black;
@@ -223,18 +222,11 @@ input.form__text:focus + span {
   color: $color-brown;
 }
 
-.form__input--telephone,
-.form__input--email {
-  border: none;
-  border-bottom: 2px solid $color-black;
-  width: 100%;
-}
-
-.form__input--addition:hover {
+.form__textarea:hover {
   border: 2px solid $color-blue;
 }
 
-.form__input--addition {
+.form__textarea {
   border: 2px solid black;
   width: 100%;
   resize: none;
@@ -329,12 +321,11 @@ input.form__text:focus + span {
     width: 100%;
   }
 
-  .form-group-gray {
-    margin: 0;
+  .content-section--gray {
     background-color: $color-gray;
   }
 
-  .form-group-wide {
+  .form-group--wide {
     @include container;
     display: flex;
     padding-top: 50px;
@@ -359,6 +350,7 @@ input.form__text:focus + span {
     display: block;
     width: 166px;
     padding-top: 0;
+    padding-bottom: 0;
     flex-shrink: 0;
   }
 
@@ -375,21 +367,15 @@ input.form__text:focus + span {
   }
 
   .form__field--type3 {
+    display: flex;
     padding: 0;
     padding-bottom: 0;
     margin: 0;
   }
 
-  .form__field input {
-    width: 82%;
+  .form__field--type3 input {
     margin-left: 25px;
-    padding-left: 0;
-    margin-bottom: 25px;
     padding-bottom: 10px;
-  }
-
-  .form__field--type3:first-child input {
-    width: 89%;
   }
 
   .form__field--type3:last-child input {
@@ -404,40 +390,18 @@ input.form__text:focus + span {
     background-color: transparent;
   }
 
-  .form-row__wrapper--double-title {
+  .form-group--block {
     padding-bottom: 50px;
     display: block;
   }
 
-  .form__title--telephone,
-  .form__title--email {
-    display: inline-block;
-    width: 25%;
-  }
-
-  .form__title--telephone {
+  .form-row {
+    display: flex;
     margin-bottom: 64px;
-    position: relative;
   }
 
-  .form__title--email {
+  .form-row:last-child {
     margin-bottom: 0;
-  }
-
-  .form__input--telephone,
-  .form__input--email {
-    width: 74%;
-  }
-
-  .form__title--telephone::after {
-    position: absolute;
-    content: "";
-    background: url("../img/icon-phone.svg") no-repeat center;
-    top: 146%;
-    left: 96%;
-    width: 25px;
-    height: 24px;
-    opacity: 0.2;
   }
 
   .form-info {
@@ -479,17 +443,13 @@ input.form__text:focus + span {
     margin: 0;
   }
 
-  .form-group-wide {
-    @include container-desktop-wide;
+  .form-group--wide {
+    padding-right: 198px;
   }
 
   .form__field--type2 {
     width: 33.3%;
   }
-
-  /*.form__field:nth-child(3n) {
-    margin-bottom: 46px;
-  }*/
 
   .form__field:nth-child(2n) {
     margin-bottom: 0;
@@ -501,15 +461,6 @@ input.form__text:focus + span {
 
   .form__title--addition {
     margin-top: 14px;
-  }
-
-  .form__input--telephone,
-  .form__input--email {
-    width: 85%;
-  }
-
-  .form__text--color-value:nth-child(n) {
-    margin-bottom: 0;
   }
 
   .form__button {

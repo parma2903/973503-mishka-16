@@ -37,14 +37,6 @@
   box-sizing: border-box;
 }
 
-@mixin container-desktop-wide {
-  padding-left: 114px;
-  padding-right: 198px;
-  margin: 0 auto;
-  max-width: 1150px;
-  box-sizing: border-box;
-}
-
 @mixin narrow-container {
   padding-left: 225px;
   padding-right: 279px;

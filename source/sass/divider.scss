@@ -14,6 +14,7 @@
 
 @media (min-width: $desktop-width) {
   .divider {
+    @include container;
     height: 23px;
   }
 }
