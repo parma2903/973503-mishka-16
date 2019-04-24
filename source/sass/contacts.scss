@@ -56,30 +56,30 @@
 
 .contacts__button {
   display: block;
-  padding: 20px 52px;
+  padding: 20px 0;
   margin-top: 39px;
 }
 
 @media (min-width: $tablet-width) {
   .contacts {
     @include container;
-    margin-bottom: 57px;
-    margin-top: 72px;
-    position: relative;
-  }
-
-  .contacts::before {
-    background: url("../img/icon-flag.svg") no-repeat center;
-    position: absolute;
-    content: "";
-    top: -22px;
-    left: 591px;
-    width: 47px;
-    height: 81px;
+    padding-bottom: 57px;
+    padding-top: 72px;
   }
 
   .contacts__title {
+    position: relative;
     font-size: 43px;
+  }
+
+  .contacts__title::before {
+    background: url("../img/icon-flag.svg") no-repeat center;
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 115px;
+    width: 47px;
+    height: 81px;
   }
 
   .contacts__list {
@@ -112,16 +112,20 @@
   .contacts {
     @include content-container;
     margin-bottom: 105px;
-    margin-top: 172px;
-    position: relative;
+    padding-top: 152px;
   }
 
-  .contacts::before {
+  .contacts__title {
+    position: relative;
+    font-size: 53px;
+  }
+
+  .contacts__title::before {
     background: url("../img/icon-flag.svg") no-repeat center;
     position: absolute;
     content: "";
     top: -22px;
-    left: 60px;
+    left: -150px;
     width: 47px;
     height: 81px;
   }
@@ -131,14 +135,10 @@
     justify-content: space-between;
   }
 
-  .contacts__title {
-    font-size: 53px;
-  }
-
   .contacts__map {
     position: absolute;
     width: 525px;
-    top: -136px;
+    top: 26px;
     right: 52px;
   }
 

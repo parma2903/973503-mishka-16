@@ -68,15 +68,16 @@
 
 
 @media (min-width: $tablet-width) {
-  .slider__slide {
+  .slider {
     position: relative;
   }
 
   .slider__buttons {
     width: 200px;
     position: absolute;
-    right: 32px;
-    bottom: -28px;
+    right: 0;
+    bottom: 0;
+    margin: 0;
   }
 
   .slider__button {
@@ -91,14 +92,4 @@
   .slider__button:active {
     border: none;
   }
-
-  /*.slider__button--previous::after {
-    top: 14px;
-    right: 40px;
-  }
-
-  .slider__button--next::after {
-    top: 16px;
-    left: 33px;
-  }*/
 }

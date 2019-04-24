@@ -18,7 +18,7 @@
             <img src="img/logo-mobile.svg" width="86" height="35" alt="Барбершоп «Бородинский»">
           </picture>
     </a>
-    <nav class="main-nav main-nav--nojs">
+    <nav class="main-nav main-nav--opened main-nav--nojs">
       <button class="main-nav__toggle" type="button"></button>
       <span class="visually-hidden">Открыть меню</span>
       <ul class="main-nav__list site-list site-list--first">
@@ -65,7 +65,7 @@
   <main class="page-main">
     <section class="promo promo--toys">
       <div class="promo__wrapper">
-        <h1 class="promo__title">Милые штуки ручной работы для дома</h1>
+        <h1 class="promo__title">Милые штуки ручной работы&nbsp;для&nbsp;дома</h1>
         <div class="promo__buttons">
           <a class="promo__button promo__button--style-1" href="interier.html">Предметы интерьера</a>
           <a class="promo__button promo__button--style-2" href="toys.html">Детские игрушки</a>
@@ -109,14 +109,18 @@
     <hr class="divider">
     <section class="info">
       <h2 class="info__title">Коротко о нас:</h2>
-      <ul class="info__list">
-        <li class="info__item info__item--flower">Экологически чистые материалы</li>
-        <li class="info__item info__item--money">Скандинавский стиль по российской цене</li>
-        <li class="info__item info__item--heart">Увеличивает лайки на фотографиях</li>
-        <li class="info__item info__item--ball">Связано вручную с любовью и умилением</li>
-        <li class="info__item info__item--rocket">Поддержка отечественного производителя</li>
-        <li class="info__item info__item--present">Поставляется в подарочной упаковке</li>
-      </ul>
+      <div class="info__list-container">
+        <ul class="info__list info__list--first">
+          <li class="info__item info__item--flower">Экологически чистые материалы</li>
+          <li class="info__item info__item--money">Скандинавский стиль по российской цене</li>
+          <li class="info__item info__item--heart">Увеличивает лайки на фотографиях</li>
+        </ul>
+        <ul class="info__list info__list--second">
+          <li class="info__item info__item--ball">Связано вручную с любовью и умилением</li>
+          <li class="info__item info__item--rocket">Поддержка отечественного производителя</li>
+          <li class="info__item info__item--present">Поставляется в подарочной упаковке</li>
+        </ul>
+      </div>
     </section>
     <section class="reviews">
       <h2 class="reviews__title">Отзывы</h2>

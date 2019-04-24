@@ -1,6 +1,6 @@
 .hit-sale {
   @include container-mobile;
-  margin-bottom: 36px;
+  padding-bottom: 36px;
 }
 
 .hit-sale__title {
@@ -40,6 +40,7 @@
   line-height: 20px;
   color: $color-brown;
   width: 100%;
+  border-collapse: collapse;
 }
 
 .hit-sale__parameter {
@@ -74,8 +75,8 @@
 }
 
 .hit-sale__button {
-  padding: 20px 85px;
-  margin-bottom: 36px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   font-size: 17px;
   width: 100%;
 }
@@ -83,7 +84,7 @@
 @media (min-width: $tablet-width) {
   .hit-sale {
     @include container;
-    margin-bottom: 53px;
+    padding-bottom: 53px;
   }
 
   .hit-sale__header {
@@ -125,12 +126,12 @@
     right: 0;
     width: 333px;
     height: 404px;
+    margin: 0;
   }
 
   .hit-sale__button {
     width: 100%;
     padding: 20px 0;
-    margin-bottom: 53px;
   }
 }
 

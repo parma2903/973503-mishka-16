@@ -1,7 +1,7 @@
 .info {
   @include container-mobile;
-  margin-bottom: 61px;
-  margin-top: 34px;
+  padding-bottom: 61px;
+  padding-top: 34px;
 }
 
 .info__title {
@@ -114,16 +114,17 @@
 @media (min-width: $tablet-width) {
   .info {
     @include container;
-    margin-bottom: 168px;
-    margin-top: 60px;
+    padding-bottom: 82px;
+    padding-top: 60px;
   }
 
   .info__title {
     font-size: 43px;
   }
 
-  .info__list {
-    column-count: 2;
+  .info__list-container {
+    display: flex;
+    justify-content: space-between;
   }
 
   .info__item {
@@ -135,16 +136,12 @@
 @media (min-width: $desktop-width) {
   .info {
     @include narrow-container;
-    margin-bottom: 169px;
-    margin-top: 93px;
+    padding-bottom: 89px;
+    padding-top: 70px;
   }
 
   .info__title {
     font-size: 53px;
-  }
-
-  .info__list {
-    column-count: 2;
   }
 
   .info__item {
