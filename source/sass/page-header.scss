@@ -9,11 +9,10 @@
 }
 
 .page-header__logo {
-  width: 86px;
-  height: auto;
   display: block;
   margin: 0 auto;
   padding-bottom: 22px;
+  text-align: center;
 }
 
 .page-header__logo picture {
@@ -68,6 +67,7 @@
   .page-header {
     @include container;
     border-bottom: none;
+    padding: 0;
   }
 
   .page-header__logo img {
@@ -78,9 +78,12 @@
   .page-header__logo {
     display: block;
     position: absolute;
+    padding: 0;
+    margin: 0;
     z-index: 10;
-    left: 540px;
-    top: -10px;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
   }
 
   .main-nav__toggle {
@@ -91,7 +94,7 @@
     display: inline;
     position: absolute;
     content: "";
-    right: 66px;
+    right: 0;
     bottom: -54px;
     margin: 0;
     padding: 0;
