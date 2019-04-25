@@ -10,16 +10,13 @@
 }
 
 @media (min-width: $tablet-width) {
-  .radio label {
-    padding-bottom: 57px;
-    padding-left: 80px;
-  }
-
-  .radio:last-child label {
+  .radio:last-child .form__text {
     padding-bottom: 0;
   }
 
   .radio .form__text {
+    padding-bottom: 57px;
+    padding-left: 80px;
     min-height: 53px;
   }
 }

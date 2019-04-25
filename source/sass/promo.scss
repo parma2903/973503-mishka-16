@@ -139,6 +139,7 @@
   .promo__button {
     width: 50%;
     text-align: left;
+    padding-right: 170px;
   }
 
   .promo--toys::after {
@@ -175,5 +176,9 @@
   .promo--toys .promo__title {
     padding-top: 161px;
     padding-bottom: 473px;
+  }
+
+  .promo__button {
+    padding-right: 370px;
   }
 }
