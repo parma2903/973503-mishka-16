@@ -47,6 +47,7 @@
   line-height: 24px;
   color: $color-white;
   display: block;
+  position: relative;
 }
 
 .promo__button:hover {
@@ -70,7 +71,6 @@
 
 .promo__button--style-1 {
   background-color: $color-blue;
-  position: relative;
 }
 
 .promo__button--style-1::after {
@@ -86,7 +86,6 @@
 
 .promo__button--style-2 {
   background-color: $color-dark-blue;
-  position: relative;
 }
 
 .promo__button--style-2::after {
@@ -138,6 +137,7 @@
   }
 
   .promo__button {
+    width: 50%;
     text-align: left;
   }
 
@@ -145,16 +145,8 @@
     background: url("../img/bg-zigzag-fill.svg") repeat center;
     content: "";
     position: absolute;
-    width: 100%;
     height: 34px;
     bottom: -20px;
-  }
-
-  .promo__button--style-1 {
-    width: 100%;
-  }
-
-  .promo__button--style-2 {
     width: 100%;
   }
 }
@@ -183,14 +175,5 @@
   .promo--toys .promo__title {
     padding-top: 161px;
     padding-bottom: 473px;
-  }
-
-
-  .promo__button--style-1 {
-    padding-right: 377px;
-  }
-
-  .promo__button--style-2 {
-    padding-right: 395px;
   }
 }

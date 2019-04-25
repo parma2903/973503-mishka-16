@@ -13,9 +13,13 @@
   border-bottom: 1px solid $color-light-gray;
 }
 
-.social__item:nth-child(2) {
-  margin-right: 41px;
-  margin-left: 41px;
+.social__item {
+  padding-right: 41px;
+  padding-left: 0;
+}
+
+.social__item:last-child {
+  padding-right: 0;
 }
 
 .social__link {
@@ -34,10 +38,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .social {
-    margin-left: 13%;
-  }
-
   .social-wrapper {
     margin-left: 0;
     margin-right: 0;

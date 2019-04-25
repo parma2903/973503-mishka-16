@@ -73,15 +73,15 @@
       <div class="form-group">
         <h2 class="form__title"><span class="form__line">Тип</span></h2>
         <div class="form-group__wrapper">
-          <div class="form__field form__field--type1">
+          <div class="form__field radio">
             <label class="form__text">
-              <input class="visually-hidden" type="radio" name="type" id="accessories" value="accessories">Аксессуары для интерьера
+              <input class="visually-hidden" type="radio" name="type" value="accessories">Аксессуары для интерьера
               <span class="form__radio"></span>
             </label>
           </div>
-          <div class="form__field form__field--type1">
+          <div class="form__field radio">
             <label class="form__text" for="toys">
-              <input class="visually-hidden" type="radio" name="type" id="toys" value="toys">Детская игрушка
+              <input class="visually-hidden" type="radio" name="type" value="toys">Детская игрушка
               <span class="form__radio"></span>
             </label>
           </div>
@@ -91,40 +91,40 @@
         <div class="form-group form-group--wide">
           <h2 class="form__title"><span class="form__line form__line--gray">Цвет</span></h2>
           <div class="form-group__wrapper form-group__wrapper--type1">
-            <div class="form__field form__field--type2">
+            <div class="form__field checkbox">
               <label class="form__text" for="white">
                 <input class="visually-hidden" type="checkbox" name="white" id="white" value="white">Белый
                 <span class="form__checkbox"></span>
               </label>
             </div>
-            <div class="form__field form__field--type2">
+            <div class="form__field checkbox">
               <label class="form__text" for="gray" checked>
-                <input class="visually-hidden" type="checkbox" name="gray" id="gray" value="gray">Серый
+                <input class="visually-hidden" type="checkbox" name="gray" value="gray">Серый
                 <span class="form__checkbox"></span>
               </label>
             </div>
-            <div class="form__field form__field--type2">
+            <div class="form__field checkbox">
               <label class="form__text" for="tiffani"
                 checked>
                 <input class="visually-hidden" type="checkbox" name="tiffani" id="tiffani" value="tiffani">«Тиффани»
                 <span class="form__checkbox"></span>
               </label>
             </div>
-            <div class="form__field form__field--type2">
+            <div class="form__field checkbox">
               <label class="form__text" for="black" checked>
-                <input class="visually-hidden" type="checkbox" name="black" id="black" value="black">Черный
+                <input class="visually-hidden" type="checkbox" name="black" value="black">Черный
                 <span class="form__checkbox"></span>
               </label>
             </div>
-            <div class="form__field form__field--type2">
+            <div class="form__field checkbox">
               <label class="form__text" for="pink" checked>
                 <input class="visually-hidden" type="checkbox" name="pink" id="pink" value="pink">Розовый
                 <span class="form__checkbox"></span>
               </label>
             </div>
-            <div class="form__field form__field--type2">
+            <div class="form__field checkbox">
               <label class="form__text" for="orange" checked>
-                <input class="visually-hidden" type="checkbox" name="orange" id="orange" value="orange">Оранжевый
+                <input class="visually-hidden" type="checkbox" name="orange" value="orange">Оранжевый
                 <span class="form__checkbox"></span>
               </label>
             </div>
@@ -141,12 +141,12 @@
           </div>
           <div class="form__field form__field--type3">
             <label class="form__text" for="surname">Фамилия:</label>
-            <input class="form__input" type="text" name="surname" id="surname"
+            <input class="form__input" type="text" name="surname"
               placeholder="Укажите фамилию*" required>
           </div>
           <div class="form__field form__field--type3">
             <label class="form__text" for="second-name">Отчество:</label>
-            <input class="form__input" type="text" name="second-name" id="second-name"
+            <input class="form__input" type="text" name="second-name"
               placeholder="Отчество, если желаете">
           </div>
         </div>
@@ -155,7 +155,7 @@
         <div class="form-group form-group--block">
           <div class="form-row">
             <h2 class="form__title"><span class="form__line form__line--gray">тел</span></h2>
-            <input class="form__input" type="tel" name="tel" id="tel"
+            <input class="form__input" type="tel" name="tel"
               pattern="[0-9]{1}-[0-9]{3}-[0-9]{7}" placeholder="+7 XXX-XXX XX XX" required>
             <svg class="form__icon-phone" version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24.829px" height="24.333px"
@@ -191,7 +191,7 @@
       <div class="form-group">
         <h2 class="form__title"><span class="form__line">Доп</span></h2>
         <div class="form-group__wrapper">
-          <textarea class="form__textarea" name="additional" id="additional"
+          <textarea class="form__textarea" name="additional"
             placeholder="Опишите все ваши пожелания к заказу" rows="5" required></textarea>
           <div class="form-info">
             <p class="form-info__text">*Поля обязательны для заполнения</p>
