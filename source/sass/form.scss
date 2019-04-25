@@ -1,0 +1,251 @@
+.form__title {
+  position: relative;
+  margin: 0;
+  padding-bottom: 25px;
+  padding-top: 34px;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 16px;
+  color: $color-blue;
+  text-transform: uppercase;
+}
+
+.form__title::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  top: 42px;
+  left: 0;
+  background-color: $color-blue;
+  z-index: -1;
+}
+
+.form__line {
+  background-color: white;
+  padding-right: 30px;
+}
+
+.form__text {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  padding-left: 45px;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 18px;
+  color: $color-black;
+}
+
+.form__input {
+  font-family: inherit;
+  font-size: 17px;
+  line-height: 18px;
+  color: $color-black;
+  margin-bottom: 24px;
+  border: none;
+  border-bottom: 2px solid $color-black;
+  width: 100%;
+}
+
+.form__input:hover {
+  border-bottom: 2px solid $color-blue;
+}
+
+.form__input:active {
+  border-bottom: 2px solid $color-blue;
+  color: $color-brown;
+}
+
+.form__field label {
+  position: relative;
+  padding-left: 59px;
+}
+
+.form__radio {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  left: 0;
+  top: 0;
+  border: 2px solid $color-brown;
+  border-radius: 100%;
+}
+
+.form__checkbox {
+  position: absolute;
+  display: inline-block;
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  left: 0;
+  top: 0;
+  border: 2px solid $color-brown;
+}
+
+input[type="radio"]:checked + .form__radio::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  position: absolute;
+  display: block;
+  background-color: $color-blue;
+}
+
+input[type="checkbox"]:checked + .form__checkbox {
+  background: url("../img/icon-tick.svg") no-repeat center;
+}
+
+.form__radio:hover,
+.form__checkbox:hover {
+  border: 2px solid $color-blue;
+}
+
+.form__radio:active,
+.form__checkbox:active {
+  border: 2px solid rgba($color-brown, 0.3);
+}
+
+input.form__text:focus + span {
+  outline: 1px solid #81b3d2;
+}
+
+.form__field--type3 label {
+  padding-left: 0;
+  padding-bottom: 20px;
+}
+
+.form__icon-phone {
+  position: absolute;
+  content: "";
+  bottom: 29px;
+  right: 3px;
+  width: 25px;
+  height: 24px;
+  opacity: 0.2;
+}
+
+.form__icon-mail {
+  position: absolute;
+  content: "";
+  bottom: 29px;
+  right: 3px;
+  width: 32px;
+  height: 21px;
+  opacity: 0.2;
+}
+
+.form-row .form__input:hover ~ .form__icon-phone {
+  fill: $color-blue;
+}
+
+.form__input-phone:active ~ .form__icon-phone {
+  fill: $color-blue;
+}
+
+.form-row .form__input:hover ~ .form__icon-mail {
+  fill: $color-blue;
+}
+
+.form__input-phone:active ~ .form__icon-mail {
+  fill: $color-blue;
+}
+
+.form__title--email {
+  margin-bottom: 27px;
+  position: relative;
+}
+
+.form__textarea {
+  border: 2px solid black;
+  width: 100%;
+  resize: none;
+  box-sizing: border-box;
+}
+
+.form__textarea:hover {
+  border: 2px solid $color-blue;
+}
+
+@media (min-width: $tablet-width) {
+  input[type="radio"]:checked + .form__radio::before {
+    content: "";
+    width: 22px;
+    height: 22px;
+  }
+
+  .form__field--type3 label {
+    padding-left: 0;
+    padding-bottom: 0;
+  }
+
+  .form__radio {
+    width: 54px;
+    height: 52px;
+  }
+
+  .form__checkbox {
+    width: 52px;
+    height: 53px;
+  }
+
+  .form__title {
+    display: block;
+    width: 166px;
+    padding-top: 0;
+    padding-bottom: 0;
+    flex-shrink: 0;
+  }
+
+  .form__title::after {
+    display: none;
+  }
+
+  .form__line--gray {
+    background-color: $color-gray;
+  }
+
+  .form__field {
+    padding: 0;
+  }
+
+  .form__field:first-child {
+    max-width: 100%;
+  }
+
+  .form__field--type3 {
+    display: flex;
+    padding: 0;
+    padding-bottom: 0;
+    margin: 0;
+  }
+
+  .form__field--type3 .form__input {
+    margin-left: 25px;
+    margin-bottom: 24px;
+    padding-bottom: 10px;
+  }
+
+  .form__field--type3:last-child .form__input {
+    margin-bottom: 0;
+  }
+
+  .form__input {
+    background-color: transparent;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__title {
+    width: 111px;
+  }
+}

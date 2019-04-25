@@ -1,3 +1,17 @@
+@font-face {
+  font-weight: normal;
+  font-family: "Open Sans";
+  font-style: normal;
+  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
+}
+
+@font-face {
+  font-weight: bold;
+  font-family: "Open Sans";
+  font-style: normal;
+  src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
+}
+
 a {
   text-decoration: none;
 }
@@ -11,7 +25,7 @@ body {
 
 .button {
   display: block;
-  font: inherit;
+  font-family: inherit;
   margin: 0;
   padding: 0;
   font-size: 18px;
@@ -40,7 +54,7 @@ img {
   height: auto;
 }
 
-.visually-hidden:not(:focus):not(:active) {
+.visually-hidden {
   position: absolute;
 
   width: 1px;
@@ -54,18 +68,4 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-@font-face {
-  font-weight: normal;
-  font-family: "Open Sans";
-  font-style: normal;
-  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
-}
-
-@font-face {
-  font-weight: bold;
-  font-family: "Open Sans";
-  font-style: normal;
-  src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
 }

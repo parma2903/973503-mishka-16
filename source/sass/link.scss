@@ -1,0 +1,14 @@
+.link {
+  text-decoration: none;
+  border-bottom: 1px solid $color-greeny-blue;
+  color: $color-brown;
+}
+
+.link:hover {
+  color: $color-greeny-blue;
+}
+
+.link:active {
+  color: rgba($color-greeny-blue, 0.3);
+  border-bottom: 1px solid rgba($color-greeny-blue, 0.3);
+}

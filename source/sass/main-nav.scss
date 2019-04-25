@@ -10,8 +10,8 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: -46px;
-  right: 0;
+  top: -50px;
+  right: 30px;
   width: 22px;
   height: 16px;
   background-color: transparent;
@@ -41,7 +41,7 @@
 }
 
 @media (max-width: $mobile-width-only) {
-  .main-nav--closed .site-list__item {
+  .main-nav--closed .site-list {
     display: none;
   }
 
@@ -63,5 +63,6 @@
 @media (min-width: $tablet-width) {
   .main-nav {
     display: flex;
+    position: static;
   }
 }

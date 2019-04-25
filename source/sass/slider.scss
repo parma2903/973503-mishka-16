@@ -29,8 +29,9 @@
   position: absolute;
   width: 50px;
   height: 26px;
-  top: 13px;
-  right: 73px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
 }
 
 .slider__button--previous:hover::after {
@@ -52,8 +53,9 @@
   position: absolute;
   width: 50px;
   height: 26px;
-  top: 13px;
-  left: 73px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
 }
 
 .slider__button--next:hover::after {
@@ -66,15 +68,16 @@
 
 
 @media (min-width: $tablet-width) {
-  .slider__slide {
+  .slider {
     position: relative;
   }
 
   .slider__buttons {
     width: 200px;
     position: absolute;
-    right: 71px;
-    bottom: -28px;
+    right: 0;
+    bottom: 0;
+    margin: 0;
   }
 
   .slider__button {
@@ -88,15 +91,5 @@
 
   .slider__button:active {
     border: none;
-  }
-
-  .slider__button--previous::after {
-    top: 14px;
-    right: 40px;
-  }
-
-  .slider__button--next::after {
-    top: 16px;
-    left: 33px;
   }
 }

@@ -1,14 +1,20 @@
 .divider {
-  position: relative;
-  color: transparent;
+  border: none;
+  margin: 0;
+  background: url("../img/bg-zigzag-line.svg") repeat center;
+  background-size: contain;
+  height: 6px;
 }
 
-.divider::after {
-  background: url("../img/bg-zigzag-line.svg") repeat center;
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 24px;
-  top: -14px;
-  right: 0;
+@media (min-width: $tablet-width) {
+  .divider {
+    height: 15px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .divider {
+    @include container;
+    height: 23px;
+  }
 }

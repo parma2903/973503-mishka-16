@@ -1,6 +1,6 @@
 .hit-sale {
   @include container-mobile;
-  margin-bottom: 36px;
+  padding-bottom: 36px;
 }
 
 .hit-sale__title {
@@ -40,6 +40,7 @@
   line-height: 20px;
   color: $color-brown;
   width: 100%;
+  border-collapse: collapse;
 }
 
 .hit-sale__parameter {
@@ -74,8 +75,8 @@
 }
 
 .hit-sale__button {
-  padding: 20px 85px;
-  margin-bottom: 36px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   font-size: 17px;
   width: 100%;
 }
@@ -83,7 +84,7 @@
 @media (min-width: $tablet-width) {
   .hit-sale {
     @include container;
-    margin-bottom: 53px;
+    padding-bottom: 53px;
   }
 
   .hit-sale__header {
@@ -121,23 +122,23 @@
 
   .hit-sale__img {
     position: absolute;
-    content: "";
-    top: 0;
+    top: -45px;
     right: 0;
     width: 333px;
     height: 404px;
+    margin: 0;
   }
 
   .hit-sale__button {
     width: 100%;
     padding: 20px 0;
-    margin-bottom: 53px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .hit-sale {
     @include content-container;
+    padding-bottom: 73px;
   }
 
   .hit-sale__img {
@@ -145,7 +146,7 @@
     width: 525px;
     height: 457px;
     top: -125px;
-    right: 49px;
+    right: 0;
     z-index: -1;
   }
 
@@ -161,7 +162,7 @@
 
   .hit-sale__subtitle {
     order: 1;
-    margin-left: -70px;
+    margin-left: -110px;
     position: absolute;
     content: "Товар недели";
     top: -4px;
@@ -169,6 +170,6 @@
   }
 
   .hit-sale__button {
-    margin-bottom: 73px;
+    margin-bottom: 0;
   }
 }

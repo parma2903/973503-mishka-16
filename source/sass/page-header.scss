@@ -1,37 +1,31 @@
 .page-header {
-  @include container-mobile;
   position: relative;
   margin: 0;
-  border-bottom: 1px solid $color-gray;
+  padding-top: 22px;
 }
 
 .page-header__text {
   display: none;
 }
 
-.page-header__logo img {
+.page-header__logo {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 22px;
+  text-align: center;
+}
+
+.page-header__logo picture {
   width: 86px;
   height: 35px;
 }
 
-.page-header__logo:hover img {
+.page-header__logo:hover picture {
   opacity: 0.6;
 }
 
-.page-header__logo:active img {
+.page-header__logo:active picture {
   opacity: 0.3;
-}
-
-.page-header__logo-image--mobile {
-  display: block;
-  width: 86px;
-  height: auto;
-  margin: 22px auto;
-}
-
-.page-header__logo-image--tablet,
-.page-header__logo-image--desktop {
-  display: none;
 }
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width) {
@@ -41,6 +35,7 @@
     display: flex;
     justify-content: space-between;
     border-bottom: none;
+    padding-top: 0;
   }
 
   .page-header__text {
@@ -51,23 +46,17 @@
     bottom: -54px;
     margin: 0;
     padding: 0;
+    font-size: 15px;
   }
 
   .page-header__logo {
-    height: 88px;
+    margin: 0;
+    padding-top: 22px;
   }
 
   .page-header__logo img {
     width: 115px;
     height: 46px;
-  }
-
-  .page-header__logo-image--tablet {
-    display: block;
-  }
-
-  .page-header__logo-image--mobile {
-    display: none;
   }
 
   .main-nav__toggle {
@@ -79,6 +68,7 @@
   .page-header {
     @include container;
     border-bottom: none;
+    padding: 0;
   }
 
   .page-header__logo img {
@@ -86,17 +76,15 @@
     height: 72px;
   }
 
-  .page-header__logo-image--desktop {
+  .page-header__logo {
     display: block;
     position: absolute;
+    padding: 0;
+    margin: 0;
     z-index: 10;
-    left: 540px;
-    top: 30px;
-  }
-
-  .page-header__logo-image--mobile,
-  .page-header__logo-image--tablet {
-    display: none;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
   }
 
   .main-nav__toggle {
@@ -107,9 +95,10 @@
     display: inline;
     position: absolute;
     content: "";
-    right: 66px;
+    right: 0;
     bottom: -54px;
     margin: 0;
     padding: 0;
+    font-size: 15px;
   }
 }

@@ -1,0 +1,25 @@
+.radio .form__text {
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 25px;
+}
+
+.radio:first-child {
+  max-width: 299px;
+}
+
+@media (min-width: $tablet-width) {
+  .radio label {
+    padding-bottom: 57px;
+    padding-left: 80px;
+  }
+
+  .radio:last-child label {
+    padding-bottom: 0;
+  }
+
+  .radio .form__text {
+    min-height: 53px;
+  }
+}

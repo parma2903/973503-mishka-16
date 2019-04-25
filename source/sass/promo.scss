@@ -1,24 +1,32 @@
 .promo {
   background-color: $color-gray;
-  margin-bottom: 30px;
-}
-
-.promo--toys {
-  background: url("../img/hero-mobile@1x.jpg") no-repeat top;
-}
-
-.promo--toys .promo__title {
-  padding-top: 77px;
-  padding-bottom: 120px;
+  margin-bottom: 34px;
+  border-top: 1px solid $color-gray;
 }
 
 .promo__wrapper {
   @include container-mobile;
 }
 
+.promo--toys {
+  background: $color-gray url("../img/hero-mobile@1x.jpg") no-repeat top;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/hero-mobile@2x.jpg");
+    background-size: 575px auto;
+  }
+}
+
+.promo--toys .promo__title {
+  padding-top: 77px;
+  padding-bottom: 135px;
+  text-align: center;
+  margin: 0 auto;
+}
+
 .promo__title {
   margin: 0;
-  padding: 75px 43px;
+  padding: 75px 0;
   font-size: 27px;
   font-weight: bold;
   line-height: 30px;
@@ -28,7 +36,7 @@
 }
 
 .promo__buttons {
-  margin-bottom: 34px;
+  margin: 0 -30px;
 }
 
 .promo__button {
@@ -39,6 +47,7 @@
   line-height: 24px;
   color: $color-white;
   display: block;
+  position: relative;
 }
 
 .promo__button:hover {
@@ -62,7 +71,6 @@
 
 .promo__button--style-1 {
   background-color: $color-blue;
-  position: relative;
 }
 
 .promo__button--style-1::after {
@@ -78,7 +86,6 @@
 
 .promo__button--style-2 {
   background-color: $color-dark-blue;
-  position: relative;
 }
 
 .promo__button--style-2::after {
@@ -102,12 +109,20 @@
   }
 
   .promo--toys {
+    position: relative;
     margin-bottom: 55px;
+    background: url("../img/hero-tablet.jpg") no-repeat top;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/hero-tablet@2x.jpg");
+      background-size: 1150px auto;
+    }
   }
 
   .promo--toys .promo__title {
     text-align: center;
     padding-bottom: 490px;
+    padding-top: 161px;
   }
 
   .promo__title {
@@ -117,28 +132,22 @@
 
   .promo__buttons {
     display: flex;
-    position: relative;
+    width: 100%;
+    margin: 0;
   }
 
   .promo__button {
-    text-align: center;
+    width: 50%;
+    text-align: left;
   }
 
-  .promo__buttons::after {
-    background: url("../img/bg-zigzag-fill.svg") no-repeat center;
+  .promo--toys::after {
+    background: url("../img/bg-zigzag-fill.svg") repeat center;
     content: "";
     position: absolute;
-    width: 100%;
-    height: 35px;
+    height: 34px;
     bottom: -20px;
-  }
-
-  .promo__button--style-1 {
-    padding-right: 187px;
-  }
-
-  .promo__button--style-2 {
-    padding-right: 204px;
+    width: 100%;
   }
 }
 
@@ -146,6 +155,16 @@
   .promo__wrapper {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .promo--toys {
+    background: url("../img/hero-desktop@1x.jpg") no-repeat top;
+    background-color: #f9f9f9;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/hero-desktop@2x.jpg");
+      background-size: 1150px auto;
+    }
   }
 
   .promo__title {
@@ -156,14 +175,5 @@
   .promo--toys .promo__title {
     padding-top: 161px;
     padding-bottom: 473px;
-  }
-
-
-  .promo__button--style-1 {
-    padding-right: 377px;
-  }
-
-  .promo__button--style-2 {
-    padding-right: 395px;
   }
 }

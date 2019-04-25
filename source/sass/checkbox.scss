@@ -1,0 +1,38 @@
+.checkbox label {
+  padding-bottom: 22px;
+}
+
+.checkbox:last-child label {
+  padding-bottom: 0;
+}
+
+.checkbox .form__text {
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: $tablet-width) {
+  .checkbox label {
+    padding-bottom: 24px;
+    padding-left: 82px;
+  }
+
+  .checkbox:last-child label {
+    padding-bottom: 0;
+  }
+
+  .checkbox .form__text {
+    min-height: 52px;
+  }
+
+  .checkbox {
+    width: 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .checkbox {
+    width: 33.3%;
+  }
+}

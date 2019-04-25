@@ -1,6 +1,6 @@
 .copyright {
   text-align: center;
-  padding-bottom: 31px;
+  padding-top: 28px;
 }
 
 .copyright__text {
@@ -35,12 +35,6 @@
 
 @media (min-width: $tablet-width) {
   .copyright {
-    padding-bottom: 0;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .copyright {
-    margin-left: 84px;
+    padding: 0;
   }
 }

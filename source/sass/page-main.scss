@@ -6,8 +6,14 @@
   color: $color-brown;
 }
 
+@media (min-width: $tablet-width) {
+  .page-main__text {
+    max-width: 612px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .page-main__text {
-    max-width: 42%;
+    max-width: 672px;
   }
 }
