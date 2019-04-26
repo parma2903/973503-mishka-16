@@ -114,10 +114,12 @@
 
   .site-list__icon-search {
     display: block;
+    opacity: 0.2;
   }
 
   .site-list__item:hover .site-list__icon-search {
     color: $color-blue;
+    opacity: 1;
   }
 
   .site-list__item:active .site-list__icon-search {
@@ -126,6 +128,7 @@
 
   .site-list__item:hover .site-list__icon-cart {
     color: $color-blue;
+    opacity: 1;
   }
 
   .site-list__item:active .site-list__icon-cart {
@@ -135,6 +138,7 @@
   .site-list__icon-cart {
     display: inline-block;
     padding-right: 15px;
+    opacity: 0.2;
   }
 
   .site-list__text-cart-type2 {

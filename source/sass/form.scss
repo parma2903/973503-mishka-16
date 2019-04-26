@@ -143,19 +143,19 @@ input.form__text:focus + span {
 }
 
 .form-row .form__input:hover ~ .form__icon-phone {
-  fill: $color-blue;
+  color: $color-blue;
 }
 
 .form__input-phone:active ~ .form__icon-phone {
-  fill: $color-blue;
+  color: $color-blue;
 }
 
 .form-row .form__input:hover ~ .form__icon-mail {
-  fill: $color-blue;
+  color: $color-blue;
 }
 
 .form__input-phone:active ~ .form__icon-mail {
-  fill: $color-blue;
+  color: $color-blue;
 }
 
 .form__title--email {
