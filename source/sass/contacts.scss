@@ -1,13 +1,13 @@
 .contacts {
   @include container-mobile;
-  margin-bottom: 39px;
-  margin-top: 44px;
+  padding-bottom: 39px;
+  padding-top: 35px;
   position: relative;
 }
 
 .contacts__title {
   margin: 0;
-  margin-bottom: 42px;
+  margin-bottom: 22px;
   padding: 0;
   font-size: 18px;
   font-weight: bold;
@@ -17,7 +17,7 @@
 
 .contacts__list {
   margin: 0;
-  margin-bottom: 42px;
+  margin-bottom: 34px;
   padding: 0;
   font-size: 15px;
   line-height: 30px;
@@ -27,9 +27,11 @@
 .contacts__parameter {
   width: 78px;
   vertical-align: top;
+  padding-bottom: 27px;
 }
 
 .contacts__value {
+  vertical-align: top;
   color: $color-brown;
 }
 
@@ -41,8 +43,9 @@
 
 .contacts__button {
   display: block;
-  padding: 20px 0;
-  margin-top: 39px;
+  padding: 13px 0;
+  margin-top: 38px;
+  text-transform: uppercase;
 }
 
 @media (min-width: $tablet-width) {

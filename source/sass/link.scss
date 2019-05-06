@@ -1,6 +1,7 @@
 .link {
   text-decoration: none;
-  border-bottom: 1px solid $color-greeny-blue;
+  text-decoration-line: underline;
+  text-decoration-color: $color-greeny-blue;
   color: $color-brown;
 }
 
