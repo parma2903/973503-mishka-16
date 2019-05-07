@@ -93,3 +93,10 @@
     border: none;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .slider__buttons {
+    right: 52px;
+  }
+}
+

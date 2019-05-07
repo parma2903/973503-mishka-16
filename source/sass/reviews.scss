@@ -106,25 +106,31 @@
 @media (min-width: $desktop-width) {
   .reviews {
     @include content-container;
-    padding-bottom: 169px;
+    padding-top: 88px;
+    padding-bottom: 130px;
     position: relative;
   }
 
   .reviews::before {
-    top: 0;
-    left: 0;
+    top: 3px;
+    left: 50px;
   }
 
   .reviews__title {
     font-size: 53px;
+    margin-bottom: 60px;
   }
 
   .reviews__text {
-    margin-bottom: 49px;
-    margin-right: 157px;
+    margin-bottom: 41px;
+    margin-right: 124px;
+  }
+
+  .reviews__name {
+    letter-spacing: 0;
   }
 
   .review__button {
-    right: 0;
+    right: 52px;
   }
 }

@@ -167,7 +167,7 @@
   .info {
     @include narrow-container;
     padding-bottom: 89px;
-    padding-top: 70px;
+    padding-top: 74px;
   }
 
   .info__title {
@@ -180,6 +180,10 @@
 
   .info__item--flower,
   .info__item--clew {
-    padding-top: 101px;
+    padding-top: 117px;
+  }
+
+  .info__list--second {
+    padding-left: 62px;
   }
 }
