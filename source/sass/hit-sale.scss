@@ -150,12 +150,16 @@
     padding-bottom: 73px;
   }
 
+  .hit-sale__column {
+    padding-right: 69%;
+  }
+
   .hit-sale__img {
     position: absolute;
     width: 525px;
     height: 457px;
-    top: -125px;
-    right: 0;
+    top: 21px;
+    right: 50px;
     z-index: -1;
   }
 
@@ -166,6 +170,7 @@
   .hit-sale__title {
     font-size: 53px;
     margin-right: auto;
+    margin-left: -6px;
     order: 2;
   }
 
@@ -176,6 +181,18 @@
     content: "Товар недели";
     top: -4px;
     left: -49px;
+  }
+
+  .hit-sale__text {
+    margin-bottom: 49px;
+  }
+
+  .hit-sale__description {
+    margin-bottom: 109px;
+  }
+
+  .hit-sale__parameter {
+    width: 20%;
   }
 
   .hit-sale__button {

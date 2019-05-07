@@ -57,6 +57,8 @@
 
   .contacts__title {
     position: relative;
+    margin-left: -5px;
+    margin-bottom: 53px;
     font-size: 43px;
   }
 
@@ -64,19 +66,29 @@
     background: url("../img/icon-flag.svg") no-repeat center;
     position: absolute;
     content: "";
-    top: 0;
-    right: 115px;
+    top: -26px;
+    right: 3px;
     width: 47px;
     height: 81px;
   }
 
   .contacts__list {
-    margin-bottom: 61px;
+    margin-bottom: 52px;
+    margin-left: -5px;
   }
 
   .contacts__list tbody {
     display: flex;
     justify-content: space-between;
+    letter-spacing: 1px;
+  }
+
+  .contacts__list tr {
+    width: 334px;
+  }
+
+  .contacts__parameter {
+    width: 73px;
   }
 
   .contacts__map {
@@ -87,12 +99,13 @@
 
   .contacts__button {
     display: block;
-    max-width: 230px;
-    padding: 20px 0;
-    margin-top: 55px;
+    max-width: 226px;
+    padding: 15px 0;
+    margin-top: 51px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    font-size: 17px;
   }
 }
 

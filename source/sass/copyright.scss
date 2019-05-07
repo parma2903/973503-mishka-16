@@ -36,5 +36,7 @@
 @media (min-width: $tablet-width) {
   .copyright {
     padding: 0;
+    margin-right: -2px;
+    padding-top: 5px;
   }
 }

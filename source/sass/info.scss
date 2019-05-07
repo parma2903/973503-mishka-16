@@ -119,6 +119,7 @@
   }
 
   .info__title {
+    margin-left: -5px;
     font-size: 43px;
   }
 
@@ -127,9 +128,38 @@
     justify-content: space-between;
   }
 
+  .info__list--second {
+    padding-left: 12px;
+  }
+
   .info__item {
-    padding-top: 112px;
+    padding-top: 115px;
     font-size: 20px;
+  }
+
+  .info__item--flower::after {
+    top: 60px;
+  }
+
+  .info__item--money::after {
+    top: 59px;
+  }
+
+  .info__item--heart::after {
+    top: 65px;
+  }
+
+  .info__item--ball::after {
+    top: 62px;
+    left: 2px;
+  }
+
+  .info__item--rocket::after {
+    top: 63px;
+  }
+
+  .info__item--present::after {
+    top: 61px;
   }
 }
 
