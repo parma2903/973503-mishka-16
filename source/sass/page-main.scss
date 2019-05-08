@@ -8,7 +8,11 @@
 
 @media (min-width: $tablet-width) {
   .page-main__text {
-    max-width: 612px;
+    font-size: 17px;
+    line-height: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 3px;
   }
 }
 

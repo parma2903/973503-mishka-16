@@ -203,6 +203,10 @@ input.form__text:focus + span {
     height: 22px;
   }
 
+  .form-group {
+    padding-top: 54px;
+  }
+
   .form__field--type3 label {
     padding-left: 0;
     padding-bottom: 0;
@@ -221,7 +225,7 @@ input.form__text:focus + span {
   .form__title {
     display: block;
     width: 166px;
-    padding-top: 0;
+    padding-top: 21px;
     padding-bottom: 0;
     flex-shrink: 0;
   }
