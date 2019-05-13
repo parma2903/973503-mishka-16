@@ -1,12 +1,12 @@
 .radio .form__text {
-  min-height: 40px;
+  min-height: 53px;
   display: flex;
   align-items: center;
-  padding-bottom: 25px;
+  padding-bottom: 0;
 }
 
 .radio:first-child {
-  max-width: 299px;
+  margin-bottom: -2px;
 }
 
 @media (min-width: $tablet-width) {
@@ -18,5 +18,7 @@
     padding-bottom: 57px;
     padding-left: 80px;
     min-height: 53px;
+    font-size: 18px;
+    line-height: 20px;
   }
 }

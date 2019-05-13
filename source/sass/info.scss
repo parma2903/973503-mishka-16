@@ -1,7 +1,7 @@
 .info {
   @include container-mobile;
-  padding-bottom: 61px;
-  padding-top: 34px;
+  padding-bottom: 50px;
+  padding-top: 27px;
 }
 
 .info__title {
@@ -20,7 +20,7 @@
 .info__item {
   margin: 0;
   padding: 0;
-  padding-top: 85px;
+  padding-top: 84px;
   font-size: 17px;
   font-weight: bold;
   line-height: 20px;
@@ -37,7 +37,7 @@
   position: absolute;
   width: 32px;
   height: 37px;
-  top: 20px;
+  top: 30px;
   left: 9px;
 }
 
@@ -50,7 +50,7 @@
   content: "";
   position: absolute;
   width: 47px;
-  height: 27px;
+  height: 30px;
   top: 28px;
   left: 1px;
 }
@@ -65,7 +65,7 @@
   position: absolute;
   width: 34px;
   height: 27px;
-  top: 23px;
+  top: 34px;
   left: 8px;
 }
 
@@ -79,7 +79,7 @@
   position: absolute;
   width: 35px;
   height: 34px;
-  top: 20px;
+  top: 32px;
   left: 3px;
 }
 
@@ -94,7 +94,7 @@
   width: 55px;
   height: 23px;
   top: 30px;
-  left: 0;
+  left: -6px;
 }
 
 .info__item--present {
@@ -107,8 +107,8 @@
   position: absolute;
   width: 33px;
   height: 32px;
-  top: 23px;
-  left: 0;
+  top: 28px;
+  left: 2px;
 }
 
 @media (min-width: $tablet-width) {
@@ -119,6 +119,7 @@
   }
 
   .info__title {
+    margin-left: -5px;
     font-size: 43px;
   }
 
@@ -127,9 +128,38 @@
     justify-content: space-between;
   }
 
+  .info__list--second {
+    padding-left: 12px;
+  }
+
   .info__item {
-    padding-top: 112px;
+    padding-top: 115px;
     font-size: 20px;
+  }
+
+  .info__item--flower::after {
+    top: 60px;
+  }
+
+  .info__item--money::after {
+    top: 59px;
+  }
+
+  .info__item--heart::after {
+    top: 65px;
+  }
+
+  .info__item--ball::after {
+    top: 62px;
+    left: 2px;
+  }
+
+  .info__item--rocket::after {
+    top: 63px;
+  }
+
+  .info__item--present::after {
+    top: 61px;
   }
 }
 
@@ -137,7 +167,7 @@
   .info {
     @include narrow-container;
     padding-bottom: 89px;
-    padding-top: 70px;
+    padding-top: 74px;
   }
 
   .info__title {
@@ -150,6 +180,10 @@
 
   .info__item--flower,
   .info__item--clew {
-    padding-top: 101px;
+    padding-top: 117px;
+  }
+
+  .info__list--second {
+    padding-left: 62px;
   }
 }

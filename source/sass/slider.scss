@@ -73,10 +73,10 @@
   }
 
   .slider__buttons {
-    width: 200px;
+    width: 175px;
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: 3px;
     margin: 0;
   }
 
@@ -91,5 +91,11 @@
 
   .slider__button:active {
     border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider__buttons {
+    right: 52px;
   }
 }
