@@ -6,7 +6,7 @@
   .form-group {
     @include container;
     display: flex;
-    padding-top: 50px;
+    padding-top: 56px;
     padding-bottom: 50px;
   }
 
@@ -21,17 +21,19 @@
     display: flex;
     flex-direction: row;
     width: 100%;
+    margin-right: -23px;
   }
 
   .form-group--wide {
     @include container;
     display: flex;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 26px;
   }
 
   .form-group--block {
-    padding-bottom: 50px;
+    padding-top: 51px;
+    padding-bottom: 41px;
     display: block;
   }
 }
@@ -42,6 +44,19 @@
   }
 
   .form-group--wide {
-    padding-right: 198px;
+    padding-right: 161px;
+    padding-top: 53px;
+  }
+
+  .form__field--type3 .form__input {
+    padding-bottom: 16px;
+  }
+
+  .form__icon-phone {
+    right: 9px;
+  }
+
+  .form__icon-mail {
+    right: 3px;
   }
 }

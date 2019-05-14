@@ -12,3 +12,22 @@ navToggle.addEventListener("click", function () {
     navMain.classList.remove("main-nav--opened");
   }
 });
+
+
+var link = document.querySelector(".hit-sale__button");
+var popup = document.querySelector(".hit-sale__form");
+
+popup.classList.add("hit-sale__form--hidden");
+link.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  popup.classList.remove("hit-sale__form--hidden");
+});
+
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+    if (popup.classList.contains("hit-sale__form--hidden")) {
+      evt.preventDefault();
+      popup.classList.remove("hit-sale__form--hidden");
+    }
+  }
+});

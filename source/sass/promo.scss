@@ -9,6 +9,7 @@
 }
 
 .promo--toys {
+  margin-bottom: 27px;
   background: $color-gray url("../img/hero-mobile@1x.jpg") no-repeat top;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -170,7 +171,7 @@
     content: "";
     position: absolute;
     height: 35px;
-    bottom: -8px;
+    bottom: -47px;
     width: 100%;
   }
 
@@ -191,7 +192,7 @@
   }
 
   .promo {
-    margin-bottom: 131px;
+    margin-bottom: 122px;
   }
 
   .promo--toys {
@@ -214,7 +215,11 @@
   }
 
   .promo::after {
-    bottom: -42px;
+    bottom: -73px;
+  }
+
+  .promo--toys::after {
+    bottom: -19px;
   }
 
   .promo--toys .promo__title {
