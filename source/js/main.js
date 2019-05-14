@@ -25,9 +25,9 @@ link.addEventListener("click", function (evt) {
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
-    if (popup.classList.contains("hit-sale__form--hidden")) {
+    if (popup.classList.contains("hit-sale__form")) {
       evt.preventDefault();
-      popup.classList.remove("hit-sale__form--hidden");
+      popup.classList.add("hit-sale__form--hidden");
     }
   }
 });
