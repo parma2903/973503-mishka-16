@@ -89,6 +89,7 @@
   border-radius: 100%;
 }
 
+
 .form__radio:last-child {
   margin-bottom: 5px;
 }
@@ -145,20 +146,39 @@ input.form__text:focus + span {
   position: absolute;
   content: "";
   bottom: 29px;
-  right: 3px;
+  right: 8px;
   width: 25px;
-  height: 24px;
+  height: 32px;
   opacity: 0.2;
 }
 
 .form__icon-mail {
   position: absolute;
   content: "";
-  bottom: 29px;
+  bottom: 27px;
   right: 3px;
-  width: 32px;
-  height: 21px;
+  width: 35px;
+  height: 29px;
   opacity: 0.2;
+}
+
+.form__title--additional {
+  padding-top: 15px;
+}
+
+.form__line--additional {
+  padding-top: 15px;
+}
+
+.form__title--additional::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  top: 23px;
+  left: 0;
+  background-color: $color-blue;
+  z-index: -1;
 }
 
 .form-row .form__input:hover ~ .form__icon-phone {
@@ -203,29 +223,27 @@ input.form__text:focus + span {
     height: 22px;
   }
 
-  .form-group {
-    padding-top: 54px;
-  }
-
   .form__field--type3 label {
     padding-left: 0;
     padding-bottom: 0;
   }
 
   .form__radio {
-    width: 54px;
-    height: 52px;
+    width: 49px;
+    height: 49px;
+    top: 1px;
+    left: 1px;
   }
 
   .form__checkbox {
-    width: 52px;
-    height: 53px;
+    width: 50px;
+    height: 49px;
   }
 
   .form__title {
     display: block;
     width: 166px;
-    padding-top: 21px;
+    padding-top: 17px;
     padding-bottom: 0;
     flex-shrink: 0;
   }
@@ -253,10 +271,16 @@ input.form__text:focus + span {
     margin: 0;
   }
 
+  .form__field--type3 .form__text {
+    padding-top: 11px;
+  }
+
   .form__field--type3 .form__input {
-    margin-left: 25px;
-    margin-bottom: 24px;
-    padding-bottom: 10px;
+    margin-left: 30px;
+    padding-left: 16px;
+    padding-top: 11px;
+    margin-bottom: 29px;
+    padding-bottom: 17px;
   }
 
   .form__field--type3:last-child .form__input {
@@ -266,12 +290,31 @@ input.form__text:focus + span {
   .form__input {
     background-color: transparent;
     padding-bottom: 10px;
-    margin-bottom: 0;
+    padding-left: 19px;
+    margin-bottom: 4px;
+  }
+
+  .form__icon-phone {
+    bottom: 15px;
+    right: 25px;
+  }
+
+  .form__icon-mail {
+    bottom: 15px;
+    right: 20px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .form__title {
     width: 111px;
+    padding-top: 19px;
+  }
+
+  .form__radio {
+    width: 46px;
+    height: 46px;
+    top: 4px;
+    left: 0;
   }
 }
