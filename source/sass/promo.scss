@@ -109,6 +109,7 @@
 @media (min-width: $tablet-width) {
   .promo {
     margin-bottom: 58px;
+    position: relative;
   }
 
   .promo__wrapper {
@@ -171,7 +172,7 @@
     content: "";
     position: absolute;
     height: 35px;
-    bottom: -47px;
+    bottom: -1px;
     width: 100%;
   }
 
@@ -215,7 +216,7 @@
   }
 
   .promo::after {
-    bottom: -73px;
+    bottom: -1px;
   }
 
   .promo--toys::after {
