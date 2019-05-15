@@ -8,7 +8,7 @@
   <link href="fonts/opensans.woff2" as="font" rel="preload" crossorigin="anonymous">
   <link href="fonts/opensansbold.woff2" as="font" rel="preload" crossorigin="anonymous">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -138,7 +138,8 @@
           </a>
           <div class="goods__info">
             <div>
-              <a class="goods__title" href="item1.html">Зайчик-попрыгайчик</a>
+              <a class="goods__title" href="item1.html">Зайчик-попрыгайчик Зайчик-попрыгайчик Зайчик-попрыгайчик
+                Зайчик-попрыгайчик Зайчик-попрыгайчик Зайчик-попрыгайчик</a>
               <p class="goods__text">Рост 30 см, вес 200 г</p>
             </div>
             <a class="goods__buy">
@@ -230,43 +231,41 @@
           <use xlink:href="#sprite-logo-footer" fill="currentColor"></use>
         </svg>
       </a>
-      <div class="social-wrapper">
-        <ul class="social page-footer__social">
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://vk.com/htmlacademy" aria-label="Мы в Инстаграм">
-              <span class="visually-hidden">Мы в Инстаграм</span>
-              <svg class="social__icon" width="21.769px" height="21.334px">
-                <use xlink:href="#sprite-icon-insta" fill="currentColor"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://facebook.com/htmlacademy" aria-label="Мы в Фейсбук">
-              <span class="visually-hidden">Мы в Фейсбук</span>
-              <svg width="14.962px" height="27.718px">
-                <use xlink:href="#sprite-icon-fb" fill="currentColor"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy" aria-label="Мы в Твиттере">
-              <span class="visually-hidden">Мы в Твиттере</span>
-              <svg width="23.494px" height="20.168px">
-                <use fill="currentColor" xlink:href="#sprite-icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <a class="copyright__text">Разработано</a>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на наш сайт">
-          <span class="visually-hidden">HTML Academy</span>
-          <svg class="copyright__logo" width="26.943px" height="34.09px">
-            <use fill="currentColor" xlink:href="#sprite-htmlacademy"></use>
-          </svg>
-        </a>
-      </div>
+      <ul class="social page-footer__social">
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="https://vk.com/htmlacademy" aria-label="Мы в Инстаграм">
+            <span class="visually-hidden">Мы в Инстаграм</span>
+            <svg class="social__icon" width="21.769px" height="21.334px">
+              <use xlink:href="#sprite-icon-insta" fill="currentColor"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="https://facebook.com/htmlacademy"
+            aria-label="Мы в Фейсбук">
+            <span class="visually-hidden">Мы в Фейсбук</span>
+            <svg width="14.962px" height="27.718px">
+              <use xlink:href="#sprite-icon-fb" fill="currentColor"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy"
+            aria-label="Мы в Твиттере">
+            <span class="visually-hidden">Мы в Твиттере</span>
+            <svg width="23.494px" height="20.168px">
+              <use fill="currentColor" xlink:href="#sprite-icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на наш сайт">
+        <p class="copyright__text">Разработано</p>
+        <span class="visually-hidden">HTML Academy</span>
+        <svg class="copyright__logo" width="26.943px" height="34.09px">
+          <use fill="currentColor" xlink:href="#sprite-htmlacademy"></use>
+        </svg>
+      </a>
     </div>
   </footer>
   <script src="js/main.js"></script>

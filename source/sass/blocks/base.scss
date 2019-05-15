@@ -25,32 +25,6 @@ body {
   margin: 0 auto;
 }
 
-.button {
-  display: block;
-  font-family: inherit;
-  margin: 0;
-  padding: 0;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 20px;
-  text-align: center;
-  color: $color-brown;
-  border: solid 2px $color-brown;
-  background-color: $color-white;
-}
-
-.button:hover {
-  color: $color-white;
-  border: solid 2px $color-brown;
-  background-color: $color-brown;
-}
-
-.button:active {
-  color: rgba($color-white, 0.3);
-  border: solid 2px $color-brown;
-  background-color: $color-brown;
-}
-
 img {
   max-width: 100%;
   height: auto;

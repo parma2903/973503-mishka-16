@@ -1,6 +1,7 @@
 @import "variables.scss";
 @import "mixins.scss";
 @import "base.scss";
+@import "button.scss";
 @import "page-header.scss";
 @import "main-nav.scss";
 @import "site-list.scss";
@@ -15,7 +16,7 @@
 @import "page-footer.scss";
 @import "social.scss";
 @import "copyright.scss";
-@import "goods.scss";
+@import "blocks/goods.scss";
 @import "producing.scss";
 @import "page-main.scss";
 @import "form.scss";
