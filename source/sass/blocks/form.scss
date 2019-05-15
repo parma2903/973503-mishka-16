@@ -203,6 +203,7 @@ input[type="checkbox"]:checked + .form__checkbox {
 }
 
 .form__textarea {
+  font-family: $font-open-sans;
   border: 2px solid black;
   width: 100%;
   resize: none;

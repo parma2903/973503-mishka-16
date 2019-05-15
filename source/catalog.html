@@ -75,8 +75,8 @@
   <header class="page-header">
     <a class="page-header__logo" href="index.html">
       <picture>
-        <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg" width="149" height="72">
-        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="112" height="46">
+        <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
         <img src="img/logo-mobile.svg" width="86" height="35" alt="Барбершоп «Бородинский»">
       </picture>
     </a>
@@ -138,16 +138,15 @@
           </a>
           <div class="goods__info">
             <div>
-              <a class="goods__title" href="item1.html">Зайчик-попрыгайчик Зайчик-попрыгайчик Зайчик-попрыгайчик
-                Зайчик-попрыгайчик Зайчик-попрыгайчик Зайчик-попрыгайчик</a>
+              <a class="goods__title" href="item1.html">Зайчик-попрыгайчик</a>
               <p class="goods__text">Рост 30 см, вес 200 г</p>
             </div>
-            <a class="goods__buy">
+            <div class="goods__buy">
               <p class="goods__price">1 200 руб.</p>
-              <svg class="goods__cart" width="20.294px" height="18.849px">
+              <svg class="goods__cart goods__cart--order" width="20.294px" height="18.849px">
                 <use xlink:href="#sprite-icon-cart" fill="currentColor"></use>
               </svg>
-            </a>
+            </div>
           </div>
         </li>
         <li class="goods__item">
@@ -167,12 +166,12 @@
               <a class="goods__title" href="item2.html">Корзинка для белья</a>
               <p class="goods__text">Диаметр 15 см, высота 10 см</p>
             </div>
-            <a class="goods__buy">
+            <div class="goods__buy">
               <p class="goods__price">690 руб.</p>
-              <svg class="goods__cart" width="20.294px" height="18.849px">
+              <svg class="goods__cart goods__cart--order" width="20.294px" height="18.849px">
                 <use xlink:href="#sprite-icon-cart" fill="currentColor"></use>
               </svg>
-            </a>
+            </div>
           </div>
         </li>
         <li class="goods__item">
@@ -192,16 +191,28 @@
               <a class="goods__title" href="item3.html">Большая корзинка<br>для игрушек</a>
               <p class="goods__text">Диаметр 30 см, высота 30 см</p>
             </div>
-            <a class="goods__buy">
+            <div class="goods__buy">
               <p class="goods__price">1 500 руб.</p>
-              <svg class="goods__cart" width="20.294px" height="18.849px">
+              <svg class="goods__cart goods__cart--order" width="20.294px" height="18.849px">
                 <use xlink:href="#sprite-icon-cart" fill="currentColor"></use>
               </svg>
-            </a>
+            </div>
           </div>
         </li>
       </ul>
     </section>
+    <div class="popup">
+      <div class="popup__form">
+        <p class="popup__form-title">Добавить в&nbsp;кoрзину</p>
+        <p class="popup__form-text">Выберите размер</p>
+        <div class="popup__form-buttons">
+          <button class="button popup__form-button" type="button">S</button>
+          <button class="button popup__form-button" type="button">M</button>
+          <button class="button popup__form-button" type="button">L</button>
+        </div>
+        <button class="button popup__button-order" type="button">Добавить</button>
+      </div>
+    </div>
     <section class="producing">
       <div class="producing-wrapper">
         <div class="producing__video">
