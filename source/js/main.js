@@ -16,6 +16,7 @@ navToggle.addEventListener("click", function () {
 
 var link = document.querySelector(".hit-sale__button");
 var popup = document.querySelector(".hit-sale__form");
+var close = document.querySelector(".hit-sale__button-order");
 
 popup.classList.add("hit-sale__form--hidden");
 link.addEventListener("click", function (evt) {
@@ -30,4 +31,9 @@ window.addEventListener("keydown", function (evt) {
       popup.classList.add("hit-sale__form--hidden");
     }
   }
+});
+
+close.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  popup.classList.add("hit-sale__form--hidden");
 });
