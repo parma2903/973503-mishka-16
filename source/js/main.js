@@ -14,15 +14,15 @@ navToggle.addEventListener("click", function () {
 });
 
 
-var link = document.querySelector(".hit-sale__button");
-var cart = document.querySelector(".goods__buy");
+var link = document.querySelector(".open-popup");
 var popup = document.querySelector(".popup");
 var close = document.querySelector(".popup__button-order");
 
 link.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  popup.classList.remove("popup--hidden");
-});
+    evt.preventDefault();
+    popup.classList.remove("popup--hidden");
+  });
+
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
@@ -36,9 +36,4 @@ window.addEventListener("keydown", function (evt) {
 close.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.add("popup--hidden");
-});
-
-cart.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  popup.classList.remove("popup--hidden");
 });
