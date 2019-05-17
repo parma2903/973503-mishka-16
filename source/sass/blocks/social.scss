@@ -4,9 +4,6 @@
   justify-content: center;
   margin: 0 auto;
   align-items: center;
-}
-
-.social-wrapper {
   margin-left: 30px;
   margin-right: 30px;
   padding-bottom: 23px;
@@ -38,7 +35,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .social-wrapper {
+  .social {
     margin-left: 0;
     margin-right: 0;
     padding-bottom: 0;

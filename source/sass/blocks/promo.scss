@@ -109,6 +109,7 @@
 @media (min-width: $tablet-width) {
   .promo {
     margin-bottom: 58px;
+    position: relative;
   }
 
   .promo__wrapper {
@@ -170,8 +171,8 @@
     background: url("../img/bg-zigzag-fill.svg") repeat center;
     content: "";
     position: absolute;
-    height: 35px;
-    bottom: -47px;
+    height: 34px;
+    bottom: -1px;
     width: 100%;
   }
 
@@ -198,8 +199,8 @@
   .promo--toys {
     margin-bottom: 0;
     background: url("../img/hero-desktop@1x.jpg") no-repeat top;
+    background-position: center;
     background-color: #f9f9f9;
-    background-position-x: 0;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/hero-desktop@2x.jpg");
@@ -215,7 +216,7 @@
   }
 
   .promo::after {
-    bottom: -73px;
+    bottom: -18px;
   }
 
   .promo--toys::after {

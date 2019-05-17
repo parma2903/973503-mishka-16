@@ -1,9 +1,5 @@
-.copyright {
-  text-align: center;
-  padding-top: 18px;
-}
-
 .copyright__text {
+  display: inline;
   font-size: 19px;
   font-weight: bold;
   line-height: 18px;
@@ -20,9 +16,11 @@
 }
 
 .copyright__link {
+  text-align: center;
+  display: block;
+  padding-top: 18px;
   color: $color-blue;
   height: 34px;
-  width: 102px;
 }
 
 .copyright__link:hover {
@@ -34,7 +32,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .copyright {
+  .copyright__link {
     padding: 0;
     margin-right: -2px;
     padding-top: 5px;

@@ -71,6 +71,10 @@
   color: $color-brown;
 }
 
+label.form__text input:focus ~ span {
+  outline: 1px solid #81b3d2;
+}
+
 .form__field label {
   position: relative;
   padding-left: 62px;
@@ -130,10 +134,6 @@ input[type="checkbox"]:checked + .form__checkbox {
 .form__radio:active,
 .form__checkbox:active {
   border: 2px solid rgba($color-brown, 0.3);
-}
-
-input.form__text:focus + span {
-  outline: 1px solid #81b3d2;
 }
 
 .form__field--type3 label {
@@ -203,6 +203,7 @@ input.form__text:focus + span {
 }
 
 .form__textarea {
+  font-family: $font-open-sans;
   border: 2px solid black;
   width: 100%;
   resize: none;
