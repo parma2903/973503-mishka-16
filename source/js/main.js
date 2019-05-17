@@ -14,15 +14,16 @@ navToggle.addEventListener("click", function () {
 });
 
 
-var link = document.querySelector(".open-popup");
+var popupOpen = document.querySelectorAll(".open-popup");
 var popup = document.querySelector(".popup");
 var close = document.querySelector(".popup__button-order");
 
-link.addEventListener("click", function (evt) {
+for (var i = 0; i < popupOpen.length; i++) {
+  popupOpen[i].addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.remove("popup--hidden");
   });
-
+}
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
