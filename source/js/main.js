@@ -15,50 +15,30 @@ navToggle.addEventListener("click", function () {
 
 
 var link = document.querySelector(".hit-sale__button");
-var popup = document.querySelector(".hit-sale__form");
-var close = document.querySelector(".hit-sale__button-order");
-
-popup.classList.add("hit-sale__form--hidden");
-link.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  popup.classList.remove("hit-sale__form--hidden");
-});
-
-window.addEventListener("keydown", function (evt) {
-  if (evt.keyCode === 27) {
-    if (popup.classList.contains("hit-sale__form")) {
-      evt.preventDefault();
-      popup.classList.add("hit-sale__form--hidden");
-    }
-  }
-});
-
-close.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  popup.classList.add("hit-sale__form--hidden");
-});
-
-
 var cart = document.querySelector(".goods__buy");
-var modal = document.querySelector(".popup");
-var finish = document.querySelector(".popup__button-order");
+var popup = document.querySelector(".popup");
+var close = document.querySelector(".popup__button-order");
 
-modal.classList.add("popup--hidden");
-cart.addEventListener("click", function (evt) {
+link.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.remove("popup--hidden");
 });
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
-    if (modal.classList.contains("popup")) {
+    if (popup.classList.contains("popup")) {
       evt.preventDefault();
       popup.classList.add("popup--hidden");
     }
   }
 });
 
-finish.addEventListener("click", function (evt) {
+close.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.add("popup--hidden");
+});
+
+cart.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  popup.classList.remove("popup--hidden");
 });

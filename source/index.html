@@ -161,18 +161,6 @@
         </picture>
         <p class="hit-sale__price">Цена: 990 руб.</p>
         <button class="button hit-sale__button" type="button">ЗАКАЗАТЬ</button>
-        <div class="hit-sale__form">
-          <div class="hit-sale__form-container">
-            <p class="hit-sale__form-title">Добавить в&nbsp;кoрзину</p>
-            <p class="hit-sale__form-text">Выберите размер</p>
-            <div class="hit-sale__form-buttons">
-              <button class="button hit-sale__form-button" type="button">S</button>
-              <button class="button hit-sale__form-button" type="button">M</button>
-              <button class="button hit-sale__form-button" type="button">L</button>
-            </div>
-            <button class="button hit-sale__button-order" type="button">Добавить</button>
-          </div>
-        </div>
       </div>
     </section>
     <hr class="divider">
@@ -227,6 +215,27 @@
       </iframe>
       <a class="contacts__button button" href="contact.html">Напишите нам</a>
     </section>
+    <form class="popup popup--hidden">
+      <div class="popup__form">
+        <p class="popup__form-title">Добавить в кoрзину</p>
+        <p class="popup__form-text">Выберите размер</p>
+        <div class="popup__form-buttons">
+          <label class="popup__form-button">
+            <input class="visually-hidden" type="radio" name="size" value="s">S
+            <span class="popup__radio"></span>
+          </label>
+          <label class="popup__form-button">
+            <input class="visually-hidden" type="radio" name="size" value="m">M
+            <span class="popup__radio"></span>
+          </label>
+          <label class="popup__form-button">
+            <input class="visually-hidden" type="radio" name="size" value="l">L
+            <span class="popup__radio"></span>
+          </label>
+        </div>
+        <button class="button popup__button-order" type="submit">Добавить</button>
+      </form>
+    </div>
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">

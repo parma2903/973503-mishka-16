@@ -71,7 +71,7 @@
   color: $color-brown;
 }
 
-input.form__text:focus + span {
+label.form__text input:focus ~ span {
   outline: 1px solid #81b3d2;
 }
 
@@ -317,5 +317,11 @@ input[type="checkbox"]:checked + .form__checkbox {
     height: 46px;
     top: 4px;
     left: 0;
+  }
+
+  .form__text--center {
+    display: block;
+    padding-top: 17px;
+    padding-bottom: 7px;
   }
 }

@@ -201,18 +201,6 @@
         </li>
       </ul>
     </section>
-    <div class="popup">
-      <div class="popup__form">
-        <p class="popup__form-title">Добавить в&nbsp;кoрзину</p>
-        <p class="popup__form-text">Выберите размер</p>
-        <div class="popup__form-buttons">
-          <button class="button popup__form-button" type="button">S</button>
-          <button class="button popup__form-button" type="button">M</button>
-          <button class="button popup__form-button" type="button">L</button>
-        </div>
-        <button class="button popup__button-order" type="button">Добавить</button>
-      </div>
-    </div>
     <section class="producing">
       <div class="producing-wrapper">
         <div class="producing__video">
@@ -231,8 +219,28 @@
         <p class="producing__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как
           появляются наши товары.</p>
         <a class="button producing__button" href="#">Сделать заказ</a>
+      </div>
+    </section>
+    <form class="popup popup--hidden">
+      <div class="popup__form">
+        <p class="popup__form-title">Добавить в кoрзину</p>
+        <p class="popup__form-text">Выберите размер</p>
+        <div class="popup__form-buttons">
+          <label class="popup__form-button">
+            <input class="visually-hidden" type="radio" name="size" value="s">S
+            <span class="popup__radio"></span>
+          </label>
+          <label class="popup__form-button">
+            <input class="visually-hidden" type="radio" name="size" value="m">M
+            <span class="popup__radio"></span>
+          </label>
+          <label class="popup__form-button">
+            <input class="visually-hidden" type="radio" name="size" value="l">L
+            <span class="popup__radio"></span>
+          </label>
         </div>
-      </section>
+        <button class="button popup__button-order" type="submit">Добавить</button>
+    </form>
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
