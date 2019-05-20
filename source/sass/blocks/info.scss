@@ -1,7 +1,7 @@
 .info {
   @include container-mobile;
   padding-bottom: 50px;
-  padding-top: 27px;
+  padding-top: 32px;
   position: relative;
 }
 
@@ -129,7 +129,7 @@
   .info {
     @include container;
     padding-bottom: 82px;
-    padding-top: 60px;
+    padding-top: 75px;
   }
 
   .info::before {
