@@ -12,6 +12,10 @@
   align-items: center;
 }
 
+.checkbox__input:checked + .form__checkbox {
+  background: url("../img/icon-tick.svg") no-repeat center;
+}
+
 @media (min-width: $tablet-width) {
   .checkbox label {
     padding-bottom: 21px;

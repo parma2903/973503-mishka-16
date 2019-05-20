@@ -60,7 +60,7 @@
   }
 
   .reviews::before {
-    background: url("../img/review@1x.jpg") no-repeat center;
+    background: $color-gray url("../img/review@1x.jpg") no-repeat center;
     position: absolute;
     content: "";
     z-index: 0;

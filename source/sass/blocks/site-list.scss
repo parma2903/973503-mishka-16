@@ -178,12 +178,14 @@
     padding-left: 49px;
     width: 50%;
     justify-content: flex-start;
+    order: 1;
   }
 
   .site-list--second {
     padding-right: 52px;
     width: 50%;
     justify-content: flex-end;
+    order: 3;
   }
 
   .site-list--first .site-list__item,

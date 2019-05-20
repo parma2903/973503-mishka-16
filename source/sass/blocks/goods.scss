@@ -67,10 +67,6 @@
   display: inline-block;
 }
 
-.goods__cart {
-  opacity: 0.2;
-}
-
 .goods__cart:hover {
   color: $color-blue;
   opacity: 1;
@@ -86,6 +82,7 @@
   display: flex;
   justify-content: space-between;
   border-top: 1px solid $color-gray;
+  color: rgba($color-black, 0.2);
 }
 
 @media (min-width: $tablet-width) {
