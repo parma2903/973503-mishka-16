@@ -9,6 +9,19 @@
   margin-bottom: -2px;
 }
 
+.radio__input:checked + .form__radio::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  position: absolute;
+  display: block;
+  background-color: $color-blue;
+}
+
 @media (min-width: $tablet-width) {
   .radio:last-child .form__text {
     padding-bottom: 0;
@@ -20,5 +33,11 @@
     min-height: 53px;
     font-size: 18px;
     line-height: 20px;
+  }
+
+  .radio__input:checked + .form__radio::before {
+    content: "";
+    width: 22px;
+    height: 22px;
   }
 }

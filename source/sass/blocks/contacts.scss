@@ -1,8 +1,21 @@
 .contacts {
   @include container-mobile;
+  position: relative;
   padding-bottom: 39px;
   padding-top: 35px;
-  position: relative;
+}
+
+.contacts::before {
+  position: absolute;
+  border: none;
+  margin: 0;
+  background: url("../img/bg-zigzag-line.svg") repeat center;
+  background-size: contain;
+  height: 6px;
+  width: 100%;
+  content: "";
+  top: 0;
+  left: 0;
 }
 
 .contacts__title {
@@ -53,6 +66,10 @@
     @include container;
     padding-bottom: 57px;
     padding-top: 72px;
+  }
+
+  .contacts::before {
+    height: 15px;
   }
 
   .contacts__title {
@@ -113,7 +130,13 @@
   .contacts {
     @include content-container;
     margin-bottom: 48px;
-    padding-top: 157px;
+    padding-top: 179px;
+  }
+
+  .contacts::before {
+    height: 23px;
+    width: 93%;
+    left: 40px;
   }
 
   .contacts__title {

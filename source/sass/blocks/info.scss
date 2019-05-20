@@ -2,6 +2,20 @@
   @include container-mobile;
   padding-bottom: 50px;
   padding-top: 27px;
+  position: relative;
+}
+
+.info::before {
+  position: absolute;
+  border: none;
+  margin: 0;
+  background: url("../img/bg-zigzag-line.svg") repeat center;
+  background-size: contain;
+  height: 6px;
+  width: 100%;
+  content: "";
+  top: 0;
+  left: 0;
 }
 
 .info__title {
@@ -118,23 +132,48 @@
     padding-top: 60px;
   }
 
+  .info::before {
+    height: 15px;
+  }
+
   .info__title {
     margin-left: -5px;
     font-size: 43px;
   }
 
-  .info__list-container {
-    display: flex;
-    justify-content: space-between;
-  }
-
   .info__list {
-    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .info__item {
     padding-top: 115px;
     font-size: 20px;
+    width: 50%;
+  }
+
+  .info__item--flower {
+    order: 1;
+  }
+
+  .info__item--ball {
+    order: 2;
+  }
+
+  .info__item--money {
+    order: 3;
+  }
+
+  .info__item--rocket {
+    order: 4;
+  }
+
+  .info__item--heart {
+    order: 5;
+  }
+
+  .info__item--present {
+    order: 6;
   }
 
   .info__item--flower::after {
@@ -167,7 +206,13 @@
   .info {
     @include narrow-container;
     padding-bottom: 89px;
-    padding-top: 74px;
+    padding-top: 97px;
+  }
+
+  .info::before {
+    left: 40px;
+    height: 23px;
+    width: 93%;
   }
 
   .info__title {
@@ -181,9 +226,5 @@
   .info__item--flower,
   .info__item--clew {
     padding-top: 117px;
-  }
-
-  .info__list--second {
-    padding-left: 50px;
   }
 }
